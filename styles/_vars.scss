@@ -1,0 +1,36 @@
+@use 'fonts';
+// Fonts
+$fontFamily: 'Nekst', sans-serif;
+$fontFamilySecond: 'SF Pro Display', serif;
+
+// Colors
+$textColor: #fff;
+$descColor: #b0a3c9;
+$footerColor: #8f889a;
+
+$bgMain: #000;
+$bgSlider: linear-gradient(152deg, #7061aa 0%, #340e73 100%);
+$bgButton: #5f29b7;
+$bgLogos: #0e0915;
+$bgSubscription: #5b419e;
+$bgSubscriptionYear: linear-gradient(167deg, #2800b0 0%, #8300ea 100%);
+
+// State Colors
+$hoverColor: #904bff;
+$hoverButton: #8441f1;
+$hoverOption: #7641cd;
+$hoverLogoLn: linear-gradient(180deg, #5a2fed, #8f00ff);
+$hoverSliderBtn: #7952ff;
+
+// Form Colors
+$formColor: #8c74b4;
+$formFocusColor: #9b65ff;
+$formErrorColor: #8f1041;
+$formRestoreColor: #8a4bf0;
+
+// Font-size
+$fontSize: 2.5rem;
+
+// Setting up an adaptive grid | Налаштування адаптивної сітки
+$maxWidthContainer: 126.5625rem;
+$containerPadding: 0 0.9375rem;

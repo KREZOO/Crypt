@@ -1,0 +1,6 @@
+@use 'styles/vars';
+
+.main {
+  font-family: vars.$fontFamily, sans-serif;
+  font-size: 2.5rem;
+}

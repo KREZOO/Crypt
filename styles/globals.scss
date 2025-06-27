@@ -1,0 +1,28 @@
+@use 'reset';
+@use 'vars';
+
+// Theme variables
+
+// Global styles
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: vars.$fontFamily;
+  font-size: vars.$fontSize;
+  color: vars.$textColor;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14.6875rem;
+  padding-bottom: 9.375rem;
+}
+
+.container {
+  max-width: vars.$maxWidthContainer;
+  margin: 0 auto;
+  padding: vars.$containerPadding;
+}
