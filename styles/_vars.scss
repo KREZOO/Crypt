@@ -22,6 +22,9 @@ $hoverOption: #7641cd;
 $hoverLogoLn: linear-gradient(180deg, #5a2fed, #8f00ff);
 $hoverSliderBtn: #7952ff;
 
+// Borders Colors
+$borderLogos: #7b708d;
+
 // Form Colors
 $formColor: #8c74b4;
 $formFocusColor: #9b65ff;
@@ -32,5 +35,13 @@ $formRestoreColor: #8a4bf0;
 $fontSize: 2.5rem;
 
 // Setting up an adaptive grid | Налаштування адаптивної сітки
-$maxWidthContainer: 126.5625rem;
-$containerPadding: 0 0.9375rem;
+$maxWidthContainer: 93.4375rem + 3.125rem * 2;
+$containerPadding: 0 3.125rem;
+
+// Breakpoints
+$bigLaptopWidth: 90rem;
+$laptopWidth: 64rem;
+$tabletWidth: 48rem;
+$miniTabletWidth: 35.625rem;
+$mobileWidth: 26.5625rem;
+$miniMobileWidth: 20.625rem;
