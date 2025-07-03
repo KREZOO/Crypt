@@ -1,0 +1,69 @@
+@use "styles/vars";
+
+.btn {
+  display: flex;
+  width: fit-content;
+  gap: 1.5625rem;
+  color: vars.$textColor;
+  border-radius: 2.6875rem;
+  background-color: vars.$bgButton;
+  padding: 1.625rem 1.25rem 1.625rem 3.5625rem;
+
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 93%;
+  letter-spacing: -0.03em;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: vars.$hoverButton;
+
+    .iconsWrapper {
+      .arrowWrapper {
+        left: 0.8125rem;
+        color: vars.$hoverButton;
+      }
+
+      .circleWrapper {
+        svg {
+          transform: scale(1.3);
+        }
+
+        circle {
+          fill: vars.$textColor;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .iconsWrapper {
+    position: relative;
+    width: 4.375rem;
+
+    .arrowWrapper {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 2;
+
+      transition:
+        left 0.3s ease,
+        color 0.3s ease;
+    }
+
+    .circleWrapper {
+      position: absolute;
+      right: 0px;
+      top: -45%;
+      z-index: 1;
+
+      svg {
+        transition: transform 0.3s ease;
+        transform-origin: center;
+      }
+    }
+  }
+}
