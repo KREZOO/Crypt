@@ -5,6 +5,7 @@
 
   min-height: fit-content;
   padding-bottom: 8.125rem;
+  overflow: hidden;
 
   .bg {
     position: absolute;
@@ -95,7 +96,7 @@
           }
 
           @media screen and (max-width: vars.$mobileWidth) {
-            font-size: 5.625rem;
+            font-size: 4.375rem;
           }
         }
 

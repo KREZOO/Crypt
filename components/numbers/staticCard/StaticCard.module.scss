@@ -26,22 +26,22 @@
   }
 
   @media screen and (max-width: vars.$laptopWidth) {
-    width: 310px;
-    height: 250px;
+    width: 19.375rem;
+    height: 15.625rem;
     padding: 1.5rem 1.0625rem;
     border-radius: 1.375rem;
   }
 
   @media (max-width: vars.$tabletWidth) {
-    width: 210px;
-    height: 160px;
+    width: 13.125rem;
+    height: 10rem;
     padding: 1.5rem 1.0625rem;
     border-radius: 1.375rem;
   }
 
   @media (max-width: vars.$mobileWidth) {
-    width: 170px;
-    height: 135px;
+    width: 10rem;
+    height: 8.4375rem;
     padding: 20px 0.875rem;
     border-radius: 1.125rem;
   }
