@@ -15,6 +15,7 @@
     flex-direction: column;
     gap: 9.0625rem;
     z-index: 2;
+    width: 100%;
 
     @media (max-width: vars.$tabletWidth) {
       gap: 21.875rem;
@@ -83,6 +84,7 @@
 
         @media (max-width: vars.$laptopWidth) {
           grid-template-columns: repeat(3, 1fr);
+          margin: 0 auto;
         }
 
         @media (max-width: vars.$tabletWidth) {
@@ -105,14 +107,14 @@
     left: 0;
     background: url('/images/hero/hero-bg.png') no-repeat right 20% / cover;
     pointer-events: none;
-    z-index: 0;
+    z-index: 1;
 
-    @media (max-width: 78.125rem) {
+    @media (max-width: 1250px) {
       background: url('/images/hero/hero-bg.png') no-repeat;
       background-position: center 0;
     }
 
-    @media (max-width: 48.125rem) {
+    @media (max-width: vars.$tabletWidth) {
       background: url('/images/hero/hero-bg-tb.png') no-repeat;
       background-size: 100% auto;
       background-position: center 10.625rem;

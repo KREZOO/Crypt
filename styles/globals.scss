@@ -13,6 +13,7 @@ body {
   font-size: vars.$fontSize;
   color: vars.$textColor;
   background: vars.$bgMain;
+  overflow-x: hidden;
 }
 
 .container {
@@ -47,6 +48,44 @@ body {
   }
 }
 
+.h3 {
+  font-size: 3.75rem;
+  line-height: 93%;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  text-transform: lowercase;
+
+  @media (max-width: vars.$mobileWidth) {
+    font-size: 2.3125rem;
+  }
+}
+
+.desc {
+  font-size: 0.9375rem;
+  line-height: 103%;
+  letter-spacing: -0.04em;
+  color: vars.$descColor;
+}
+
+.borderTop {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @media screen and (max-width: vars.$laptopWidth) {
+    padding: 0 1.25rem;
+  }
+
+  @media screen and (max-width: vars.$tabletWidth) {
+    padding: 0 15px;
+  }
+
+  @media screen and (max-width: vars.$mobileWidth) {
+    padding: 0 0.4375rem;
+  }
+}
+
 .exchange {
   position: relative;
   display: flex;
@@ -74,11 +113,6 @@ body {
     background: linear-gradient(90deg, #5a2fed 0%, #8f00ff 100%);
     padding: 0.125rem;
 
-    @media (max-width: vars.$miniTabletWidth) {
-      top: -0.125rem;
-      bottom: -0.125rem;
-    }
-
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
@@ -90,6 +124,11 @@ body {
     transition:
       opacity 0.3s ease,
       transform 0.3s ease;
+
+    @media (max-width: vars.$miniTabletWidth) {
+      top: -0.125rem;
+      bottom: -0.125rem;
+    }
   }
 
   &:hover::before,

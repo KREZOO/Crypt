@@ -1,0 +1,173 @@
+@use 'styles/vars';
+
+.numbers {
+  position: relative;
+
+  min-height: fit-content;
+  padding-bottom: 8.125rem;
+
+  .bg {
+    position: absolute;
+    inset: 0;
+    background: url('/images/numbers/numbers-bg.png') no-repeat;
+    background-size: 105% auto;
+    background-position: 0 35%;
+    z-index: 0;
+    rotate: 5deg;
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      background: url('/images/numbers/numbers-bg-mb.png') no-repeat center /
+        cover;
+      rotate: 0deg;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.375rem;
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      gap: 1.875rem;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6.25rem;
+      padding-top: 0.9375rem;
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        gap: 3.125rem;
+      }
+
+      .desc {
+        @media screen and (max-width: vars.$mobileWidth) {
+          display: none;
+          visibility: hidden;
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        gap: 9.375rem;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        gap: 5.625rem;
+      }
+
+      .titleWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2.1875rem;
+
+        @media screen and (max-width: vars.$tabletWidth) {
+          gap: 1.25rem;
+        }
+
+        @media screen and (max-width: vars.$mobileWidth) {
+          gap: 0.625rem;
+        }
+
+        .title {
+          font-size: 15.625rem;
+          line-height: 93%;
+          letter-spacing: -0.04em;
+          font-weight: 300;
+
+          @media screen and (max-width: vars.$laptopWidth) {
+            font-size: 10rem;
+          }
+
+          @media screen and (max-width: vars.$tabletWidth) {
+            font-size: 7.8125rem;
+          }
+
+          @media screen and (max-width: vars.$mobileWidth) {
+            font-size: 5.625rem;
+          }
+        }
+
+        .subtitle {
+          font-size: 2.5rem;
+          line-height: 103%;
+          letter-spacing: -0.04em;
+          max-width: 16.25rem;
+          margin-left: 1.6875rem;
+
+          @media screen and (max-width: vars.$laptopWidth) {
+            font-size: 1.875rem;
+          }
+
+          @media screen and (max-width: vars.$tabletWidth) {
+            font-size: 1.875rem;
+            margin-left: 0.3125rem;
+          }
+
+          @media screen and (max-width: vars.$mobileWidth) {
+            font-size: 1rem;
+            max-width: 8.125rem;
+          }
+        }
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+
+        .statsTitle {
+          color: vars.$descColorSecond;
+          max-width: 7.5rem;
+          align-self: center;
+          margin-left: 1.6875rem;
+
+          @media screen and (max-width: vars.$tabletWidth) {
+            align-self: end;
+            margin-left: 0.3125rem;
+          }
+
+          @media screen and (max-width: vars.$mobileWidth) {
+            display: none;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+          }
+        }
+
+        .statsCards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: auto;
+          row-gap: 1.875rem;
+          column-gap: 1.25rem;
+          max-width: 48.75rem;
+
+          @media screen and (max-width: vars.$tabletWidth) {
+            row-gap: 1.1875rem;
+            column-gap: 0.8125rem;
+          }
+
+          @media screen and (max-width: vars.$mobileWidth) {
+            row-gap: 0.9375rem;
+            column-gap: 0.625rem;
+          }
+
+          .solo {
+            grid-column: span 2;
+          }
+        }
+      }
+    }
+  }
+}
