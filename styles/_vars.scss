@@ -5,7 +5,8 @@ $fontFamilySecond: 'SF Pro Display', serif;
 
 // Colors
 $textColor: #fff;
-$descColor: #b0a3c9;
+$descColor: #909090;
+$descColorSecond: #6e647d;
 $footerColor: #8f889a;
 
 $bgMain: #000;
@@ -24,6 +25,7 @@ $hoverSliderBtn: #7952ff;
 
 // Borders Colors
 $borderLogos: #7b708d;
+$borderSection: linear-gradient(166deg, #fff 0%, #5f29b7 100%);
 
 // Form Colors
 $formColor: #8c74b4;
@@ -39,9 +41,9 @@ $maxWidthContainer: 93.4375rem + 3.125rem * 2;
 $containerPadding: 0 3.125rem;
 
 // Breakpoints
-$bigLaptopWidth: 90rem;
-$laptopWidth: 64rem;
-$tabletWidth: 48rem;
-$miniTabletWidth: 35.625rem;
-$mobileWidth: 26.5625rem;
-$miniMobileWidth: 20.625rem;
+$bigLaptopWidth: 1440px;
+$laptopWidth: 1024px;
+$tabletWidth: 810px;
+$miniTabletWidth: 570px;
+$mobileWidth: 425px;
+$miniMobileWidth: 330px;

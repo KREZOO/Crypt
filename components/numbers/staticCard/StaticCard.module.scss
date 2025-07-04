@@ -1,0 +1,83 @@
+@use 'styles/vars';
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23.4375rem;
+  height: 18.125rem;
+  padding: 2.1875rem;
+  border-radius: 2.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #ffffff, #5f29b7);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: vars.$laptopWidth) {
+    width: 310px;
+    height: 250px;
+    padding: 1.5rem 1.0625rem;
+    border-radius: 1.375rem;
+  }
+
+  @media (max-width: vars.$tabletWidth) {
+    width: 210px;
+    height: 160px;
+    padding: 1.5rem 1.0625rem;
+    border-radius: 1.375rem;
+  }
+
+  @media (max-width: vars.$mobileWidth) {
+    width: 170px;
+    height: 135px;
+    padding: 20px 0.875rem;
+    border-radius: 1.125rem;
+  }
+
+  .data {
+    font-size: 5rem;
+    line-height: 93%;
+    letter-spacing: -0.04em;
+    font-weight: 300;
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      font-size: 2.75rem;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 103%;
+    letter-spacing: -0.04em;
+    max-width: 10rem;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 0.75rem;
+    }
+  }
+}
