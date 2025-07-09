@@ -2,8 +2,9 @@
 
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { StaticCard } from './staticCard/StaticCard';
-import Style from './Numbers.module.scss';
+import { SectionHeader } from '../sectionHeader/SectionHeader';
 import Image from 'next/image';
+import Style from './Numbers.module.scss';
 
 interface Props {}
 
@@ -23,11 +24,7 @@ export function Numbers({}: Props) {
       <div className={Style.bg} />
 
       <div className={Style.content + ' container'}>
-        <header className={Style.header}>
-          <h3 className='h3'>Numbers</h3>
-
-          <div className={Style.desc + ' desc'}>Manage positions on</div>
-        </header>
+        <SectionHeader title='numbers' desc='Manage positions on' />
 
         <main className={Style.main}>
           <div className={Style.titleWrapper}>

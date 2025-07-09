@@ -1,0 +1,112 @@
+@use 'styles/vars';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.25rem;
+  padding-top: 0.9375rem;
+  max-width: 100%;
+
+  @media screen and (max-width: vars.$tabletWidth) {
+    gap: 3.125rem;
+  }
+
+  .title {
+    max-width: 62.5rem;
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      max-width: fit-content;
+    }
+  }
+
+  .sm {
+    font-size: 4.375rem;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      font-size: 3.75rem;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .md {
+    font-size: 5.625rem;
+    line-height: 103%;
+    letter-spacing: -0.02em;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      font-size: 4.375rem;
+
+      + .desc {
+        display: none;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .lg {
+    font-size: 8.125rem;
+    line-height: 93%;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+
+    @media screen and (max-width: vars.$bigLaptopWidth) {
+      font-size: 6.25rem;
+    }
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      font-size: 70px;
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      + .desc {
+        display: none;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .desc {
+    width: fit-content;
+    padding-top: 0.3125rem;
+
+    @media screen and (max-width: vars.$miniTabletWidth) {
+      display: none;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      display: none;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.gradient {
+  background: vars.$titleGradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
