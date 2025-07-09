@@ -7,6 +7,10 @@
   padding-bottom: 8.125rem;
   overflow: hidden;
 
+  @media screen and (max-width: vars.$mobileWidth) {
+    padding-bottom: 4.375rem;
+  }
+
   .bg {
     position: absolute;
     inset: 0;
@@ -33,27 +37,6 @@
 
     @media screen and (max-width: vars.$mobileWidth) {
       gap: 1.875rem;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 6.25rem;
-      padding-top: 0.9375rem;
-
-      @media screen and (max-width: vars.$tabletWidth) {
-        gap: 3.125rem;
-      }
-
-      .desc {
-        @media screen and (max-width: vars.$mobileWidth) {
-          display: none;
-          visibility: hidden;
-          width: 0;
-          height: 0;
-        }
-      }
     }
 
     .main {
@@ -162,6 +145,13 @@
           @media screen and (max-width: vars.$mobileWidth) {
             row-gap: 0.9375rem;
             column-gap: 0.625rem;
+          }
+
+          @media screen and (max-width: vars.$miniMobileWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 1.875rem;
+            margin: 0 auto;
           }
 
           .solo {

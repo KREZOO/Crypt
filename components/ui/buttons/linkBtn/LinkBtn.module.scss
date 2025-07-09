@@ -1,4 +1,4 @@
-@use "styles/vars";
+@use 'styles/vars';
 
 .btn {
   display: flex;
@@ -16,6 +16,11 @@
 
   transition: background-color 0.3s ease;
 
+  @media (max-width: vars.$miniMobileWidth) {
+    padding: 20px 20px 20px 37px;
+    font-size: 1.3125rem;
+  }
+
   &:hover {
     background-color: vars.$hoverButton;
 
@@ -28,6 +33,12 @@
       .circleWrapper {
         svg {
           transform: scale(1.3);
+        }
+
+        @media screen and (max-width: vars.$miniMobileWidth) {
+          svg {
+            transform: scale(0.9);
+          }
         }
 
         circle {
@@ -52,6 +63,12 @@
       transition:
         left 0.3s ease,
         color 0.3s ease;
+
+      @media screen and (max-width: vars.$miniMobileWidth) {
+        svg {
+          transform: scale(0.8);
+        }
+      }
     }
 
     .circleWrapper {
@@ -60,9 +77,17 @@
       top: -45%;
       z-index: 1;
 
+      @media screen and (max-width: vars.$miniMobileWidth) {
+        top: -80%;
+      }
+
       svg {
         transition: transform 0.3s ease;
         transform-origin: center;
+
+        @media screen and (max-width: vars.$miniMobileWidth) {
+          transform: scale(0.8);
+        }
       }
     }
   }
