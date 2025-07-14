@@ -75,13 +75,19 @@ select {
   color: inherit;
   background-color: transparent;
 }
+select {
+  all: unset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 input::-ms-clear {
   display: none;
 }
 
 button,
-input[type='submit'] {
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;

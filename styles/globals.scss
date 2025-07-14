@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-  max-width: vars.$maxWidthContainer;
-  margin: 0 auto;
-  padding: vars.$containerPadding;
+  $maxWidthContainer: 93.4375rem + 3.125rem * 2;
+  $containerPadding: 0 3.125rem;
 }
