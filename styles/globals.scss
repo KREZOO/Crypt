@@ -1,5 +1,5 @@
-@use 'reset';
-@use 'vars';
+@use "reset";
+@use "vars";
 
 // Theme variables
 
@@ -106,7 +106,7 @@ body {
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;

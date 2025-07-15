@@ -1,0 +1,69 @@
+@use "styles/_vars";
+
+.signInBtn {
+  margin-left: 38px;
+  position: relative;
+  display: flex;
+  gap: 8px;
+  font-family: vars.$fontFamily;
+  font-size: 25px;
+  font-weight: 400;
+  color: vars.$textColor;
+  background-color: vars.$bgButton;
+  padding: 18px 37px;
+  border-radius: 43px;
+  transition: all 0.3s ease 0s;
+  svg {
+    transition: all 0.5s ease 0s;
+    top: 2px;
+    opacity: 0.5;
+  }
+}
+
+.signInBtn:hover {
+  background-color: vars.$hoverButton;
+  svg {
+    opacity: 1;
+  }
+}
+
+//-------------------------------/
+//Адаптив
+//-------------------------------/
+@media (max-width: 880px) {
+  .signInBtn {
+    margin-left: 12px;
+  }
+}
+@media (max-width: vars.$tabletWidth) {
+  .signInBtn {
+    z-index: 5;
+    font-size: 22px;
+    margin-left: 0;
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .signInBtn {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+@media (max-width: vars.$miniTabletWidth) {
+  .signInBtn {
+    font-size: 20px;
+    padding: 18px 90px;
+    background-color: vars.$bgMain;
+    border: 1px solid #8a4cef;
+    border-radius: 40px;
+    svg {
+      color: #8a4cef;
+    }
+  }
+  .signInBtn:hover {
+    background-color: vars.$hoverButton;
+    svg {
+      color: vars.$textColor;
+    }
+  }
+}
