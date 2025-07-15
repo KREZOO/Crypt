@@ -5,3 +5,9 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {};
+
+// const nextTranslate = require("next-translate");
+
+// module.exports = nextTranslate();

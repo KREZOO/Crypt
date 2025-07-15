@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+import { Hero } from '@/components/hero/Hero';
+import { Numbers } from '@/components/numbers/Numbers';
+import { Benefits } from '@/components/benefits/Benefits';
+import styles from './page.module.scss';
+=======
+import styles from "./page.module.scss";
+import Header from "@/components/layout/Header/Header";
+>>>>>>> 8c75b09 (header with translation function added)
+
+export default function Home() {
+  return (
+    <div className={styles.page}>
+<<<<<<< HEAD
+      <main className={styles.main}>
+        <Hero />
+        <Numbers />
+        <Benefits />
+      </main>
+=======
+      <Header></Header>
+      <main className={styles.main}></main>
+>>>>>>> 8c75b09 (header with translation function added)
+    </div>
+  );
+}

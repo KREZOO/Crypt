@@ -1,5 +1,5 @@
-@use "reset";
-@use "vars";
+@use 'reset';
+@use 'vars';
 
 // Theme variables
 
@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
   max-width: vars.$maxWidthContainer;
   margin: 0 auto;
   padding: vars.$containerPadding;
@@ -106,7 +107,7 @@ body {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -161,4 +162,8 @@ body {
 .subtext {
   font-weight: 300;
   color: vars.$borderLogos;
+=======
+  $maxWidthContainer: 93.4375rem + 3.125rem * 2;
+  $containerPadding: 0 3.125rem;
+>>>>>>> 8c75b09 (header with translation function added)
 }

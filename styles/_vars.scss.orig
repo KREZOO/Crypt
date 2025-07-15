@@ -40,12 +40,24 @@ $formRestoreColor: #8a4bf0;
 $fontSize: 2.5rem;
 
 // Setting up an adaptive grid | Налаштування адаптивної сітки
+<<<<<<< HEAD
+$maxWidthContainer: 93.4375rem + 3.125rem * 2;
+$containerPadding: 0 3.125rem;
+=======
 $maxWidthContainer: 126.5625rem;
 $containerPadding: 0 0.9375rem;
+>>>>>>> 8c75b09 (header with translation function added)
 
 // Breakpoints
 $bigLaptopWidth: 1440px;
 $laptopWidth: 1024px;
+<<<<<<< HEAD
+$tabletWidth: 810px;
+$miniTabletWidth: 570px;
+$mobileWidth: 425px;
+$miniMobileWidth: 330px;
+=======
 $tabletWidth: 768px;
 $miniTabletWidth: 570px;
 $mobileWidth: 425px;
+>>>>>>> 8c75b09 (header with translation function added)

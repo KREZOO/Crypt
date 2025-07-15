@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const fs = require("fs");
 const path = require("path");
 
@@ -5,6 +6,15 @@ const folderPath = path.resolve(__dirname, "./public/icons"); // <-- путь к
 
 function replaceColorsInFile(filePath) {
   let content = fs.readFileSync(filePath, "utf8");
+=======
+const fs = require('fs');
+const path = require('path');
+
+const folderPath = path.resolve(__dirname, './public/icons'); // <-- путь к папке с SVG
+
+function replaceColorsInFile(filePath) {
+  let content = fs.readFileSync(filePath, 'utf8');
+>>>>>>> 8c75b09 (header with translation function added)
 
   // Заменяем fill="..." на fill="currentColor", кроме fill="none"
   content = content.replace(/fill="(?!none)[^"]*"/gi, 'fill="currentColor"');
@@ -12,10 +22,17 @@ function replaceColorsInFile(filePath) {
   // Заменяем stroke="..." на stroke="currentColor", кроме stroke="none"
   content = content.replace(
     /stroke="(?!none)[^"]*"/gi,
-    'stroke="currentColor"'
+<<<<<<< HEAD
+    'stroke="currentColor"',
   );
 
   fs.writeFileSync(filePath, content, "utf8");
+=======
+    'stroke="currentColor"'
+  );
+
+  fs.writeFileSync(filePath, content, 'utf8');
+>>>>>>> 8c75b09 (header with translation function added)
   console.log(`Updated: ${filePath}`);
 }
 
@@ -28,11 +45,19 @@ function walkDir(dir) {
 
     if (stat.isDirectory()) {
       walkDir(fullPath);
+<<<<<<< HEAD
     } else if (path.extname(fullPath).toLowerCase() === ".svg") {
+=======
+    } else if (path.extname(fullPath).toLowerCase() === '.svg') {
+>>>>>>> 8c75b09 (header with translation function added)
       replaceColorsInFile(fullPath);
     }
   });
 }
 
 walkDir(folderPath);
+<<<<<<< HEAD
 console.log("Done!");
+=======
+console.log('Done!');
+>>>>>>> 8c75b09 (header with translation function added)
