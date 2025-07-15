@@ -8,6 +8,10 @@
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: vars.$fontFamily;
   font-size: vars.$fontSize;

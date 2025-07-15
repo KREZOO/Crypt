@@ -1,9 +1,9 @@
-@use 'styles/vars';
+@use "styles/vars";
 
 .hero {
   position: relative;
   overflow: hidden;
-  margin-top: 7.1875rem;
+  margin-top: calc(7.1875rem + 125px);
 
   @media (max-width: vars.$miniTabletWidth) {
     margin-top: 0;
@@ -105,29 +105,29 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('/images/hero/hero-bg.png') no-repeat right 20% / cover;
+    background: url("/images/hero/hero-bg.png") no-repeat right 20% / cover;
     pointer-events: none;
     z-index: 1;
 
     @media (max-width: 1250px) {
-      background: url('/images/hero/hero-bg.png') no-repeat;
+      background: url("/images/hero/hero-bg.png") no-repeat;
       background-position: center 0;
     }
 
     @media (max-width: vars.$tabletWidth) {
-      background: url('/images/hero/hero-bg-tb.png') no-repeat;
+      background: url("/images/hero/hero-bg-tb.png") no-repeat;
       background-size: 100% auto;
       background-position: center 10.625rem;
     }
 
     @media (max-width: vars.$miniTabletWidth) {
-      background: url('/images/hero/hero-bg-mb.png') no-repeat;
+      background: url("/images/hero/hero-bg-mb.png") no-repeat;
       background-size: 100% auto;
       background-position: center -4.375rem;
     }
 
     @media (max-width: vars.$miniMobileWidth) {
-      background: url('/images/hero/hero-bg-mb.png') no-repeat;
+      background: url("/images/hero/hero-bg-mb.png") no-repeat;
       background-size: 100% auto;
       background-position: center 0;
     }

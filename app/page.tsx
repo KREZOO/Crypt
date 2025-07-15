@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header/Header";
-import { Hero } from "@/components/hero/Hero";
-import { Numbers } from "@/components/numbers/Numbers";
-import { Benefits } from "@/components/benefits/Benefits";
+import { Hero } from "@/components/sections/Hero/Hero";
+import { Numbers } from "@/components/sections/Numbers/Numbers";
+import { Benefits } from "@/components/sections/Benefits/Benefits";
 import styles from "./page.module.scss";
 
 export default function Home() {

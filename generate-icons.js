@@ -2,6 +2,11 @@ const fs = require("fs").promises;
 const path = require("path");
 const prettier = require("prettier");
 
+function capitalize(str) {
+  if (!str) return "";
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 async function generateIcons() {
   const iconsDir = path.resolve(__dirname, "public/icons");
   const componentsDir = path.resolve(__dirname, "components/icons");
@@ -17,10 +22,12 @@ async function generateIcons() {
     const svgContent = await fs.readFile(svgFile, "utf8");
 
     const baseName = path.basename(svgFile, ".svg");
+
     const prefix =
       /^\d/.test(baseName) && relativeDir
-        ? relativeDir.replace(/[^a-zA-Z0-9]/g, "")
+        ? capitalize(relativeDir.replace(/[^a-zA-Z0-9]/g, ""))
         : "";
+
     let componentName =
       (prefix ? prefix : "") +
       baseName

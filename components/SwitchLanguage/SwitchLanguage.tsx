@@ -1,7 +1,7 @@
 "use client";
 
 import "@/i18n";
-import { SelectOpenIcon } from "./icons";
+import { SelectOpenIcon } from "../ui/icons";
 import Style from "./SwitchLanguage.module.scss";
 import {
   Listbox,
@@ -23,29 +23,23 @@ const languages = [
 export function SwitchLanguage({}: Props) {
   const { i18n } = useTranslation();
 
-  // Инициализация состояния выбранного языка на основе i18n
   const [selectedLanguage, setSelectedLanguage] = useState(
     () => languages.find((lang) => lang.name === i18n.language) || languages[0]
   );
 
-  // Меняем язык в i18next при выборе нового
   const handleChange = (lang: (typeof languages)[number]) => {
     setSelectedLanguage(lang);
     i18n.changeLanguage(lang.name);
-    localStorage.setItem("i18nextLng", lang.name); // сохраняем выбор
+    // localStorage удалён
   };
 
-  // При монтировании — убеждаемся, что язык соответствует сохранённому
+  // При монтировании просто синхронизируем selectedLanguage с текущим языком i18n
   useEffect(() => {
-    const savedLang = localStorage.getItem("i18nextLng");
-    if (savedLang) {
-      const found = languages.find((lang) => lang.name === savedLang);
-      if (found) {
-        setSelectedLanguage(found);
-        i18n.changeLanguage(found.name);
-      }
+    const found = languages.find((lang) => lang.name === i18n.language);
+    if (found) {
+      setSelectedLanguage(found);
     }
-  }, []);
+  }, [i18n.language]);
 
   return (
     <Listbox value={selectedLanguage} onChange={handleChange}>
@@ -65,3 +59,5 @@ export function SwitchLanguage({}: Props) {
     </Listbox>
   );
 }
+
+export default SwitchLanguage;

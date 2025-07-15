@@ -1,5 +1,5 @@
-import { LinkBtn } from '@/components/ui/buttons/linkBtn/LinkBtn';
-import { PAGES } from '@/config/pages.config';
+import { LinkBtn } from "@/components/ui/buttons/linkBtn/LinkBtn";
+import { PAGES } from "@/config/pages.config";
 import {
   Exchange1Icon,
   Exchange2Icon,
@@ -7,10 +7,10 @@ import {
   Exchange4Icon,
   Exchange5Icon,
   Exchange6Icon,
-} from '@/components/icons';
+} from "@/components/ui/icons";
 
-import Style from './Hero.module.scss';
-import Link from 'next/link';
+import Style from "./Hero.module.scss";
+import Link from "next/link";
 
 interface Props {}
 
@@ -26,14 +26,14 @@ export function Hero({}: Props) {
 
   return (
     <section className={Style.hero}>
-      <div className={Style.content + ' container'}>
+      <div className={Style.content + " container"}>
         <header className={Style.header}>
-          <h1 className='h1'>
-            Crypto trading {''}
+          <h1 className="h1">
+            Crypto trading {""}
             <div className={Style.subtitle}>with bots and smart seals</div>
           </h1>
 
-          <LinkBtn text='Sign up now' path={PAGES.SIGN_UP} />
+          <LinkBtn text="Sign up now" path={PAGES.SIGN_UP} />
         </header>
 
         <footer className={Style.footer}>
@@ -46,12 +46,12 @@ export function Hero({}: Props) {
               <Link
                 href={path}
                 key={index}
-                className='exchange'
-                target='_blank'
+                className="exchange"
+                target="_blank"
               >
                 <Icon />
 
-                {soon && <span className='soon'>Soon</span>}
+                {soon && <span className="soon">Soon</span>}
               </Link>
             ))}
           </div>

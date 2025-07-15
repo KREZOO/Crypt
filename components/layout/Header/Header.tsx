@@ -3,7 +3,7 @@
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Style from "./Header.module.scss";
-import { SwitchLanguage } from "../../ui/SwitchLanguage";
+import { SwitchLanguage } from "../../SwitchLanguage/SwitchLanguage";
 import { SignInBtn } from "../../ui/buttons/signIn/SignInBtn";
 import { LogoIcon } from "../../ui/icons";
 import React, { useEffect, useState } from "react";
