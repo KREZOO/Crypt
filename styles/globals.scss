@@ -1,11 +1,15 @@
-@use 'reset';
-@use 'vars';
+@use "reset";
+@use "vars";
 
 // Theme variables
 
 // Global styles
 ::-webkit-scrollbar {
   display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -106,7 +110,7 @@ body {
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;

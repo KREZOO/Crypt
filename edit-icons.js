@@ -12,7 +12,7 @@ function replaceColorsInFile(filePath) {
   // Заменяем stroke="..." на stroke="currentColor", кроме stroke="none"
   content = content.replace(
     /stroke="(?!none)[^"]*"/gi,
-    'stroke="currentColor"',
+    'stroke="currentColor"'
   );
 
   fs.writeFileSync(filePath, content, "utf8");

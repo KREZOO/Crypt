@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
+import I18nProviderWrapper from "../components/I18nProviderWrapper";
 
 export const metadata: Metadata = {
   title: "Capico",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <I18nProviderWrapper>{children}</I18nProviderWrapper>
+      </body>
     </html>
   );
 }

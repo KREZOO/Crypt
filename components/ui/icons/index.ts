@@ -34,6 +34,7 @@ export { NotificationsIcon } from './NotificationsIcon';
 export { OrdersIcon } from './OrdersIcon';
 export { PanicSellIcon } from './PanicSellIcon';
 export { ProfitIcon } from './ProfitIcon';
+export { SelectOpenIcon } from './SelectOpenIcon';
 export { SpeedIcon } from './SpeedIcon';
 export { StopLossIcon } from './StopLossIcon';
 export { TimeOutIcon } from './TimeOutIcon';
