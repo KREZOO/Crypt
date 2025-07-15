@@ -158,6 +158,13 @@ body {
   }
 }
 
+.btnWrapper {
+  display: inline-block;
+  width: 5.9375rem; /* старшая высота */
+  height: 12.5rem; /* старая ширина */
+  overflow: visible;
+}
+
 .subtext {
   font-weight: 300;
   color: vars.$borderLogos;

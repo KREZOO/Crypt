@@ -1,0 +1,10 @@
+@use 'styles/vars';
+
+.comfortFeatures {
+  position: relative;
+  width: 100%;
+
+  .main {
+    height: fit-content;
+  }
+}

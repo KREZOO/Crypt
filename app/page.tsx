@@ -1,6 +1,7 @@
-import { Hero } from '@/components/hero/Hero';
-import { Numbers } from '@/components/numbers/Numbers';
-import { Benefits } from '@/components/benefits/Benefits';
+import { Hero } from '@/components/sections/Hero/Hero';
+import { Numbers } from '@/components/sections/Numbers/Numbers';
+import { Benefits } from '@/components/sections/Benefits/Benefits';
+import { ComfortFeatures } from '@/components/sections/ComfortFeatures/ComfortFeatures';
 import styles from './page.module.scss';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <Numbers />
         <Benefits />
+        <ComfortFeatures />
       </main>
     </div>
   );

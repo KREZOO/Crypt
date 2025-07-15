@@ -1,8 +1,8 @@
 'use client';
 
 import { useIsMobile } from '@/hooks/useIsMobile';
-import { StaticCard } from './staticCard/StaticCard';
-import { SectionHeader } from '../sectionHeader/SectionHeader';
+import { StaticCard } from './StaticCard/StaticCard';
+import { SectionHeader } from '../../SectionHeader/SectionHeader';
 import Image from 'next/image';
 import Style from './Numbers.module.scss';
 

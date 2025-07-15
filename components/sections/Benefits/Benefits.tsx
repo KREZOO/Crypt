@@ -1,7 +1,7 @@
 'use client';
 
-import { SectionHeader } from '../sectionHeader/SectionHeader';
-import { FeatureBlock } from '../featureBlock/FeatureBlock';
+import { SectionHeader } from '../../SectionHeader/SectionHeader';
+import { FeatureBlock } from '../../FeatureBlock/FeatureBlock';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import Image from 'next/image';
 import Style from './Benefits.module.scss';

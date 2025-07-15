@@ -1,4 +1,4 @@
-import { LinkBtn } from '@/components/ui/buttons/linkBtn/LinkBtn';
+import { LinkBtn } from '@/components/ui/buttons/LinkBtn/LinkBtn';
 import { PAGES } from '@/config/pages.config';
 import {
   Exchange1Icon,
@@ -7,7 +7,7 @@ import {
   Exchange4Icon,
   Exchange5Icon,
   Exchange6Icon,
-} from '@/components/icons';
+} from '@/components/ui/icons';
 
 import Style from './Hero.module.scss';
 import Link from 'next/link';
