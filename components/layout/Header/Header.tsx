@@ -1,12 +1,13 @@
-'use client';
+"use client";
 
-import { useTranslation } from 'react-i18next';
-import Link from 'next/link';
-import Style from './Header.module.scss';
-import { SwitchLanguage } from '../../SwitchLanguage/SwitchLanguage';
-import { SignInBtn } from '../../ui/buttons/SignInBtn/SignInBtn';
-import { LogoIcon } from '../../ui/icons';
-import React, { useEffect, useState } from 'react';
+import cn from "classnames";
+import { useTranslation } from "react-i18next";
+import Link from "next/link";
+import Style from "./Header.module.scss";
+import { SwitchLanguage } from "../../SwitchLanguage/SwitchLanguage";
+import { SignInBtn } from "../../ui/buttons/SignInBtn/SignInBtn";
+import { LogoIcon } from "../../ui/icons";
+import React, { useEffect, useState } from "react";
 
 interface Props {}
 
@@ -27,8 +28,8 @@ export function Header({}: Props) {
     };
 
     checkWidth();
-    window.addEventListener('resize', checkWidth);
-    return () => window.removeEventListener('resize', checkWidth);
+    window.addEventListener("resize", checkWidth);
+    return () => window.removeEventListener("resize", checkWidth);
   }, []);
 
   useEffect(() => {
@@ -37,8 +38,8 @@ export function Header({}: Props) {
     };
 
     checkWidth();
-    window.addEventListener('resize', checkWidth);
-    return () => window.removeEventListener('resize', checkWidth);
+    window.addEventListener("resize", checkWidth);
+    return () => window.removeEventListener("resize", checkWidth);
   }, []);
 
   useEffect(() => {
@@ -47,13 +48,13 @@ export function Header({}: Props) {
     };
 
     checkWidth();
-    window.addEventListener('resize', checkWidth);
-    return () => window.removeEventListener('resize', checkWidth);
+    window.addEventListener("resize", checkWidth);
+    return () => window.removeEventListener("resize", checkWidth);
   }, []);
 
   return (
     <div className={Style.header}>
-      <Link href='#' className={Style.logo}>
+      <Link href="#" className={Style.logo}>
         <LogoIcon />
       </Link>
       {/* Если не телефон — оставляем SwitchLanguage на месте */}
@@ -62,31 +63,37 @@ export function Header({}: Props) {
           <SwitchLanguage />
         </div>
       )}
-      <div className={`${Style.nav} ${isActive ? Style.active : ''}`}>
+      <div className={`${Style.nav} ${isActive ? Style.active : Style.hidden}`}>
         <ul className={Style.menu}>
           <li>
-            <Link href='#' className={Style.menuLink}>
-              {t('prices')}
+            <Link
+              href="#"
+              className={cn(Style.menuLink, { [Style.hidden]: !isActive })}
+            >
+              {t("prices")}
             </Link>
           </li>
           <li>
-            <Link href='#' className={Style.menuLink}>
-              {t('partners')}
+            <Link
+              href="#"
+              className={cn(Style.menuLink, { [Style.hidden]: !isActive })}
+            >
+              {t("partners")}
             </Link>
           </li>
         </ul>
         {/* Если телефон — рендерим SwitchLanguage здесь */}
         {isPhone && (
-          <div className={Style.lang}>
+          <div className={cn(Style.lang, { [Style.hidden]: !isActive })}>
             <SwitchLanguage />
           </div>
         )}
         {/* Кнопка входа рендерится на хэдере, 
         если разрешение до мини-планештного или выше */}
         {isMiniTablet && (
-          <div className={`${Style.signIn} ${isActive ? Style.active : ''}`}>
-            <div className={Style.signIn}>
-              <SignInBtn text={t('signIn')} />
+          <div className={`${Style.signIn} ${isActive ? Style.active : ""}`}>
+            <div className={cn(Style.signIn, { [Style.hidden]: !isActive })}>
+              <SignInBtn text={t("signIn")} />
             </div>
           </div>
         )}
@@ -94,14 +101,14 @@ export function Header({}: Props) {
       {/* Кнопка входа рендерится в меню-бургере, 
       если разрешение мини-планшетное или ниже */}
       {!isMiniTablet && (
-        <div className={`${Style.signIn} ${isActive ? Style.active : ''}`}>
+        <div className={`${Style.signIn} ${isActive ? Style.active : ""}`}>
           <div className={Style.signIn}>
-            <SignInBtn text={t('signIn')} />
+            <SignInBtn text={t("signIn")} />
           </div>
         </div>
       )}
       <div
-        className={`${Style.burger} ${isActive ? Style.active : ''}`}
+        className={`${Style.burger} ${isActive ? Style.active : ""}`}
         onClick={handleBurgerClick}
       >
         <span></span>
