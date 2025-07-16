@@ -110,6 +110,9 @@
 }
 
 @media (max-width: vars.$tabletWidth) {
+  .hidden {
+    display: none;
+  }
   .header {
     z-index: 10;
     padding: 25px 20px;
@@ -192,5 +195,12 @@
   }
   .burger {
     width: 30px;
+  }
+}
+
+@media (max-height: 340px) {
+  .nav {
+    justify-content: end;
+    padding-bottom: 40px;
   }
 }
