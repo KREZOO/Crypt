@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
-import I18nProviderWrapper from "../components/I18nProviderWrapper";
+import I18nProviderWrapper from "../providers/I18nProviderWrapper";
 
 export const metadata: Metadata = {
   title: "Capico",
