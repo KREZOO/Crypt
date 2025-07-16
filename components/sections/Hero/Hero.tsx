@@ -1,3 +1,7 @@
+"use client";
+
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { LinkBtn } from "@/components/ui/buttons/linkBtn/LinkBtn";
 import { PAGES } from "@/config/pages.config";
 import {
@@ -15,6 +19,7 @@ import Link from "next/link";
 interface Props {}
 
 export function Hero({}: Props) {
+  const { t } = useTranslation();
   const exchanges: { Icon: any; path: string; soon: boolean }[] = [
     { Icon: Exchange1Icon, path: PAGES.EXCHANGES[0], soon: false },
     { Icon: Exchange2Icon, path: PAGES.EXCHANGES[1], soon: false },
@@ -29,17 +34,15 @@ export function Hero({}: Props) {
       <div className={Style.content + " container"}>
         <header className={Style.header}>
           <h1 className="h1">
-            Crypto trading {""}
-            <div className={Style.subtitle}>with bots and smart seals</div>
+            {t("heroTitle")} {""}
+            <div className={Style.subtitle}>{t("heroSubTitle")}</div>
           </h1>
 
-          <LinkBtn text="Sign up now" path={PAGES.SIGN_UP} />
+          <LinkBtn text={t("signUp")} path={PAGES.SIGN_UP} />
         </header>
 
         <footer className={Style.footer}>
-          <div className={Style.exchangesTitle}>
-            Trade for free on your favorite exchanges
-          </div>
+          <div className={Style.exchangesTitle}>{t("exchangesTitle")}</div>
 
           <div className={Style.exchanges}>
             {exchanges.map(({ Icon, path, soon }, index) => (

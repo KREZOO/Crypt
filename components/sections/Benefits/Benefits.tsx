@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../../SectionHeader/SectionHeader";
 import { FeatureBlock } from "../../FeatureBlock/FeatureBlock";
 import { useIsMobile } from "@/hooks/useIsMobile";
@@ -9,6 +10,7 @@ import Style from "./Benefits.module.scss";
 interface Props {}
 
 export function Benefits({}: Props) {
+  const { t } = useTranslation();
   const isMobile = useIsMobile();
 
   return (
@@ -22,27 +24,23 @@ export function Benefits({}: Props) {
       />
 
       <div className={Style.content + " container"}>
-        <SectionHeader title="benefits" desc="Manage positions on" />
+        <SectionHeader title={t("benefits")} desc={t("managePos")} />
 
         <main className={Style.main}>
           <FeatureBlock
             imageSrc="/images/benefits/ib.png"
-            title="Interface Builder"
-            subtitle="Customize your look"
-            desc="Remove the excess, add what you need. 
-            Trade at your convenience."
+            title={t("featureBlock1Title")}
+            subtitle={t("featureBlock1Subtitle")}
+            desc={t("featureBlock1Desc")}
           />
 
           <FeatureBlock
             imageSrc="/images/benefits/multi-chart.png"
-            title="MultiChart"
+            title={t("featureBlock2Title")}
             subtitle={
               <>
-                Add any trading pairs{" "}
-                <span className="subtext">
-                  from different exchanges and analyzecryptocurrency assets on
-                  one screen
-                </span>
+                {t("featureBlock2SubtitlePt1")}{" "}
+                <span className="subtext">{t("featureBlock2SubtitlePt2")}</span>
               </>
             }
             reverse
@@ -50,11 +48,11 @@ export function Benefits({}: Props) {
 
           <FeatureBlock
             imageSrc="/images/benefits/portfolio.png"
-            title="Portfolio & Statistics"
-            subtitle="Your assets on all connected exchanges are collected in one place"
+            title={t("featureBlock3Title")}
+            subtitle={t("featureBlock3Subtitle")}
             desc={
               <>
-                Visual statistics of trade. <br /> Uploading reports
+                {t("featureBlock3DescPt1")} <br /> {t("featureBlock3DescPt2")}
               </>
             }
           />

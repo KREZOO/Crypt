@@ -1,6 +1,7 @@
 import Style from "./SignInBtn.module.scss";
 interface Props {
   text: string;
+  path: string;
 }
 import Link from "next/link";
 import Image from "next/image";

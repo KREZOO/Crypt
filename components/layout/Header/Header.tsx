@@ -7,12 +7,13 @@ import Style from "./Header.module.scss";
 import { SwitchLanguage } from "../../SwitchLanguage/SwitchLanguage";
 import { SignInBtn } from "../../ui/buttons/SignInBtn/SignInBtn";
 import { LogoIcon } from "../../ui/icons";
+import { PAGES } from "@/config/pages.config";
 import React, { useEffect, useState } from "react";
 
 interface Props {}
 
 export function Header({}: Props) {
-  const { t } = useTranslation(); // ✅ подключаем перевод
+  const { t } = useTranslation(); //
   const [isActive, setIsActive] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
   const [isMiniTablet, setIsMiniTablet] = useState(false);
@@ -67,7 +68,7 @@ export function Header({}: Props) {
         <ul className={Style.menu}>
           <li>
             <Link
-              href="#"
+              href="/prices"
               className={cn(Style.menuLink, { [Style.hidden]: !isActive })}
             >
               {t("prices")}
@@ -75,7 +76,7 @@ export function Header({}: Props) {
           </li>
           <li>
             <Link
-              href="#"
+              href="/partners"
               className={cn(Style.menuLink, { [Style.hidden]: !isActive })}
             >
               {t("partners")}
@@ -93,7 +94,7 @@ export function Header({}: Props) {
         {isMiniTablet && (
           <div className={`${Style.signIn} ${isActive ? Style.active : ""}`}>
             <div className={cn(Style.signIn, { [Style.hidden]: !isActive })}>
-              <SignInBtn text={t("signIn")} />
+              <SignInBtn text={t("signIn")} path={PAGES.SIGN_UP} />
             </div>
           </div>
         )}
@@ -103,7 +104,7 @@ export function Header({}: Props) {
       {!isMiniTablet && (
         <div className={`${Style.signIn} ${isActive ? Style.active : ""}`}>
           <div className={Style.signIn}>
-            <SignInBtn text={t("signIn")} />
+            <SignInBtn text={t("signIn")} path={PAGES.SIGN_UP} />
           </div>
         </div>
       )}
