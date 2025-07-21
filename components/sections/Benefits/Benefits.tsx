@@ -2,7 +2,7 @@
 
 import { SectionHeader } from '../../SectionHeader/SectionHeader';
 import { FeatureBlock } from '../../FeatureBlock/FeatureBlock';
-import { useIsMobile } from '@/hooks/useIsMobile';
+import { useIsMobile } from '@/hooks/breakpoints';
 import Image from 'next/image';
 import Style from './Benefits.module.scss';
 

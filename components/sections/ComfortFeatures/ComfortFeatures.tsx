@@ -1,12 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useIsMobile } from '@/hooks/useIsMobile';
+import { useIsMobile } from '@/hooks/breakpoints/useIsMobile';
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
-import { SwapBtn } from '@/components/ui/buttons/SwapSlideBtn/SwapSlideBtn';
 import cn from 'classnames';
 
 import Style from './ComfortFeatures.module.scss';
+import { CFSlider } from '@/components/sliders/CFSlider/CFSlider';
 
 interface Props {}
 
@@ -23,18 +23,18 @@ export function ComfortFeatures({}: Props) {
         className='borderTop'
       />
 
-      <div className={cn(Style.content, 'container')}>
-        <SectionHeader
-          title='Everything for your comfortable work'
-          titleGradient
-          titleSize='md'
-        />
+      <div className='container'>
+        <div className={Style.wrapper}>
+          <SectionHeader
+            title='Everything for your comfortable work'
+            titleGradient
+            titleSize='md'
+          />
 
-        <main className={Style.main}>
-          <div className='btnWrapper'>
-            <SwapBtn />
-          </div>
-        </main>
+          <main className={Style.main}>
+            <CFSlider />
+          </main>
+        </div>
       </div>
     </section>
   );

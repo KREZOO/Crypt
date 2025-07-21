@@ -1,5 +1,5 @@
-@use "reset";
-@use "vars";
+@use 'reset';
+@use 'vars';
 
 // Theme variables
 
@@ -55,6 +55,7 @@ body {
 }
 
 .h3 {
+  text-wrap: balance;
   font-size: 3.75rem;
   line-height: 93%;
   letter-spacing: -0.04em;
@@ -110,7 +111,7 @@ body {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;

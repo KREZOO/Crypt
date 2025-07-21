@@ -1,6 +1,6 @@
 'use client';
 
-import { useIsMobile } from '@/hooks/useIsMobile';
+import { useIsMobile } from '@/hooks/breakpoints/useIsMobile';
 import { StaticCard } from './StaticCard/StaticCard';
 import { SectionHeader } from '../../SectionHeader/SectionHeader';
 import Image from 'next/image';

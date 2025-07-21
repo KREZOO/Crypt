@@ -1,4 +1,4 @@
-@use "styles/_vars";
+@use 'styles/_vars';
 
 .header {
   z-index: 8;
@@ -13,7 +13,7 @@
   padding: 30px;
   background-color: vars.$bgMain;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -40,10 +40,11 @@
   align-items: center;
   justify-items: center;
   margin-left: auto;
-  transition: all 0.3s ease 0s;
-}
-.nav.active {
-  opacity: 100%;
+  transition: opacity 0.3s ease 0s;
+
+  &.active {
+    opacity: 1;
+  }
 }
 
 .menu {
@@ -130,12 +131,16 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     opacity: 0;
+
     background-color: vars.$bgMain;
+
+    &.active {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
   .menu {
     flex-direction: column;
@@ -167,7 +172,7 @@
   }
   .burger::before,
   .burger::after {
-    content: "";
+    content: '';
     background-color: vars.$textColor;
     position: absolute;
     width: 100%;

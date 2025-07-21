@@ -10,8 +10,8 @@
     "icon": "node edit-icons.js && node generate-icons.js"
   },
   "dependencies": {
-    "classnames": "^2.5.1",
     "@headlessui/react": "^2.2.4",
+    "classnames": "^2.5.1",
     "i18next": "^25.3.1",
     "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",
@@ -19,7 +19,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.6.0",
-    "sass": "^1.89.2"
+    "sass": "^1.89.2",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@types/node": "^20",

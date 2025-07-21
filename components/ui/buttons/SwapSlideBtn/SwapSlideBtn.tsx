@@ -11,18 +11,21 @@ interface Props {
   onClick?: () => void;
 }
 
-export const SwapBtn = forwardRef<HTMLButtonElement, Props>(
-  ({ positioning = 'horizontal', direction = 'prev', onClick }, ref) => {
+export const SwapSlideBtn = forwardRef<HTMLButtonElement, Props>(
+  ({ positioning = 'vertical', direction = 'next', onClick }, ref) => {
+    const positioningClass =
+      positioning === 'horizontal' ? Style.horizontal : Style.vertical;
+
     return (
       <button
         ref={ref}
         onClick={onClick}
-        className={cn(Style.btn, Style[positioning], Style[direction])}
+        className={cn(Style.btn, positioningClass, Style[direction])}
       >
         {direction === 'next' ? (
-          <Arrow02Icon className={Style.icon} />
+          <Arrow02Icon />
         ) : (
-          <Arrow02Icon className={cn(Style.prev, Style.icon)} />
+          <Arrow02Icon className={Style.prev} />
         )}
       </button>
     );
