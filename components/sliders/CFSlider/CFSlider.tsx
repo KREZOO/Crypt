@@ -46,7 +46,7 @@ export function CFSlider() {
           scrollbar={{ draggable: true, hide: false }}
           breakpoints={{
             0: {
-              slidesPerView: 1.5,
+              slidesPerView: 2,
               spaceBetween: 0,
             },
             370: {
