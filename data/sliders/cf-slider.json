@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "cf-slider.s1_title",
+    "desc": "cf-slider.s1_desc",
+    "image": "/icons/sliders/CFSlider/speed.svg"
+  },
+  {
+    "id": 2,
+    "title": "cf-slider.s2_title",
+    "desc": "cf-slider.s2_desc",
+    "image": "/icons/sliders/CFSlider/hotkeys.svg"
+  },
+  {
+    "id": 3,
+    "title": "cf-slider.s3_title",
+    "desc": "cf-slider.s3_desc",
+    "image": "/icons/sliders/CFSlider/notifications.svg"
+  },
+  {
+    "id": 4,
+    "title": "cf-slider.s4_title",
+    "desc": "cf-slider.s4_desc",
+    "image": "/icons/sliders/CFSlider/demo-account.svg"
+  },
+  {
+    "id": 5,
+    "title": "cf-slider.s5_title",
+    "desc": "cf-slider.s5_desc",
+    "image": "/icons/sliders/CFSlider/cloud-service.svg"
+  },
+  {
+    "id": 6,
+    "title": "cf-slider.s6_title",
+    "desc": "cf-slider.s6_desc",
+    "image": "/icons/sliders/CFSlider/dark-theme.svg"
+  }
+]

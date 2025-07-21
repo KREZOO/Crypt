@@ -1,11 +1,10 @@
-"use client";
+'use client';
 
-import { useTranslation } from "react-i18next";
-import { SectionHeader } from "../../SectionHeader/SectionHeader";
-import { FeatureBlock } from "../../FeatureBlock/FeatureBlock";
-import { useIsMobile } from "@/hooks/useIsMobile";
-import Image from "next/image";
-import Style from "./Benefits.module.scss";
+import { SectionHeader } from '../../SectionHeader/SectionHeader';
+import { FeatureBlock } from '../../FeatureBlock/FeatureBlock';
+import { useIsMobile } from '@/hooks/breakpoints';
+import Image from 'next/image';
+import Style from './Benefits.module.scss';
 
 interface Props {}
 
@@ -16,11 +15,11 @@ export function Benefits({}: Props) {
   return (
     <section className={Style.benefits}>
       <Image
-        src={isMobile ? "/images/border-top-mb.png" : "/images/border-top.png"}
+        src={isMobile ? '/images/border-top-mb.png' : '/images/border-top.png'}
         width={1550}
         height={50}
-        alt="borderTop"
-        className="borderTop"
+        alt='borderTop'
+        className='borderTop'
       />
 
       <div className={Style.content + " container"}>

@@ -1,7 +1,7 @@
-import Style from "./LinkBtn.module.scss";
+import Style from './LinkBtn.module.scss';
 
-import Link from "next/link";
-import { Arrow02Icon, CircleIcon } from "@/components/ui/icons";
+import Link from 'next/link';
+import { Arrow02Icon, CircleIcon } from '@/components/ui/icons';
 
 interface Props {
   text: string;

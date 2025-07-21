@@ -28,4 +28,18 @@
   "featureBlock3Subtitle": "Your assets on all connected exchanges are collected in one place",
   "featureBlock3DescPt1": "Visual statistics of trade.",
   "featureBlock3DescPt2": "Uploading reports."
+  "cf-slider": {
+    "s1_title": "Speed",
+    "s1_desc": "Your assets on all connected exchanges are collected in one place",
+    "s2_title": "Hotkeys",
+    "s2_desc": "Use hot keys to work faster",
+    "s3_title": "Notifications",
+    "s3_desc": "Get all the importantemail messages and Telegram",
+    "s4_title": "Demo Account",
+    "s4_desc": "Train. Learn. Test any features. Free and without risks",
+    "s5_title": "Cloud Service",
+    "s5_desc": "Updates are usually invisible. No break from trade.",
+    "s6_title": "Dark theme",
+    "s6_desc": "Trade anytime. Even at night."
+  }
 }

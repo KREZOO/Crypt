@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Style from './FeatureBlock.module.scss';
 import cn from 'classnames';
-import { useIsMobile } from '@/hooks/useIsMobile';
+import { useIsMobile } from '@/hooks/breakpoints/useIsMobile';
 
 interface Props {
   title: string;

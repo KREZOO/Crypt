@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
 import { useTranslation } from "react-i18next";
-import { useIsMobile } from "@/hooks/useIsMobile";
+import { useIsMobile } from '@/hooks/breakpoints';
 import { StaticCard } from "./StaticCard/StaticCard";
 import { SectionHeader } from "../../SectionHeader/SectionHeader";
 import Image from "next/image";
@@ -16,11 +16,11 @@ export function Numbers({}: Props) {
   return (
     <section className={Style.numbers}>
       <Image
-        src={isMobile ? "/images/border-top-mb.png" : "/images/border-top.png"}
+        src={isMobile ? '/images/border-top-mb.png' : '/images/border-top.png'}
         width={1550}
         height={50}
-        alt="borderTop"
-        className="borderTop"
+        alt='borderTop'
+        className='borderTop'
       />
 
       <div className={Style.bg} />
