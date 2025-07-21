@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
-import "@/styles/globals.scss";
-import I18nProviderWrapper from "../providers/I18nProviderWrapper";
+import '@/styles/globals.scss';
+import I18nProviderWrapper from '../providers/I18nProviderWrapper';
 
 export const metadata: Metadata = {
-  title: "Capico",
-  description: "Crypto trading platform",
+  title: 'Capico',
+  description: 'Crypto trading platform',
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <I18nProviderWrapper>{children}</I18nProviderWrapper>
       </body>

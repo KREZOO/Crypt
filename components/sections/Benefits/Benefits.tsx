@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslation } from 'react-i18next';
 import { SectionHeader } from '../../SectionHeader/SectionHeader';
 import { FeatureBlock } from '../../FeatureBlock/FeatureBlock';
 import { useIsMobile } from '@/hooks/breakpoints';
@@ -22,36 +23,36 @@ export function Benefits({}: Props) {
         className='borderTop'
       />
 
-      <div className={Style.content + " container"}>
-        <SectionHeader title={t("benefits")} desc={t("managePos")} />
+      <div className={Style.content + ' container'}>
+        <SectionHeader title={t('benefits')} desc={t('managePos')} />
 
         <main className={Style.main}>
           <FeatureBlock
-            imageSrc="/images/benefits/ib.png"
-            title={t("featureBlock1Title")}
-            subtitle={t("featureBlock1Subtitle")}
-            desc={t("featureBlock1Desc")}
+            imageSrc='/images/benefits/ib.png'
+            title={t('featureBlock1Title')}
+            subtitle={t('featureBlock1Subtitle')}
+            desc={t('featureBlock1Desc')}
           />
 
           <FeatureBlock
-            imageSrc="/images/benefits/multi-chart.png"
-            title={t("featureBlock2Title")}
+            imageSrc='/images/benefits/multi-chart.png'
+            title={t('featureBlock2Title')}
             subtitle={
               <>
-                {t("featureBlock2SubtitlePt1")}{" "}
-                <span className="subtext">{t("featureBlock2SubtitlePt2")}</span>
+                {t('featureBlock2SubtitlePt1')}{' '}
+                <span className='subtext'>{t('featureBlock2SubtitlePt2')}</span>
               </>
             }
             reverse
           />
 
           <FeatureBlock
-            imageSrc="/images/benefits/portfolio.png"
-            title={t("featureBlock3Title")}
-            subtitle={t("featureBlock3Subtitle")}
+            imageSrc='/images/benefits/portfolio.png'
+            title={t('featureBlock3Title')}
+            subtitle={t('featureBlock3Subtitle')}
             desc={
               <>
-                {t("featureBlock3DescPt1")} <br /> {t("featureBlock3DescPt2")}
+                {t('featureBlock3DescPt1')} <br /> {t('featureBlock3DescPt2')}
               </>
             }
           />
