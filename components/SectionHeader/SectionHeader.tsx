@@ -1,4 +1,6 @@
+import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
+
 import Style from './SectionHeader.module.scss';
 
 interface Props {
@@ -20,6 +22,8 @@ export function SectionHeader({
   descColor,
   descSize,
 }: Props) {
+  const { i18n } = useTranslation();
+
   return (
     <header className={Style.header}>
       <h3
@@ -27,6 +31,7 @@ export function SectionHeader({
           [Style.gradient]: titleGradient,
         })}
         style={{ maxWidth: titleWidth }}
+        lang={i18n.language}
       >
         {title}
       </h3>
@@ -34,6 +39,7 @@ export function SectionHeader({
       <div
         className={cn('desc', Style.desc)}
         style={{ color: descColor, fontSize: descSize }}
+        lang={i18n.language}
       >
         {desc}
       </div>

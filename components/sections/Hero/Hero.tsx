@@ -1,8 +1,9 @@
-"use client";
+'use client';
 
-import { useTranslation } from "react-i18next";
-import { LinkBtn } from "@/components/ui/buttons/linkBtn/LinkBtn";
-import { PAGES } from "@/config/pages.config";
+import { useTranslation } from 'react-i18next';
+import { LinkBtn } from '@/components/ui/buttons/LinkBtn/LinkBtn';
+import { Exchange } from '@/components/Exchange/Exchange';
+import { PAGES } from '@/config/pages.config';
 import {
   Exchange1Icon,
   Exchange2Icon,
@@ -13,12 +14,11 @@ import {
 } from '@/components/ui/icons';
 
 import Style from './Hero.module.scss';
-import Link from 'next/link';
 
 interface Props {}
 
 export function Hero({}: Props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const exchanges: { Icon: any; path: string; soon: boolean }[] = [
     { Icon: Exchange1Icon, path: PAGES.EXCHANGES[0], soon: false },
     { Icon: Exchange2Icon, path: PAGES.EXCHANGES[1], soon: false },
@@ -32,29 +32,20 @@ export function Hero({}: Props) {
     <section className={Style.hero}>
       <div className={Style.content + ' container'}>
         <header className={Style.header}>
-          <h1 className="h1">
-            {t("heroTitle")} {""}
-            <div className={Style.subtitle}>{t("heroSubTitle")}</div>
+          <h1 className='h1' lang={i18n.language}>
+            {t('hero.title')} {''}
+            <div className={Style.subtitle}>{t('hero.subtitle')}</div>
           </h1>
 
-          <LinkBtn text={t("signUp")} path={PAGES.SIGN_UP} />
+          <LinkBtn text={t('signUp')} path={PAGES.SIGN_UP} />
         </header>
 
         <footer className={Style.footer}>
-          <div className={Style.exchangesTitle}>{t("exchangesTitle")}</div>
+          <div className={Style.exchangesTitle}>{t('hero.exchangesTitle')}</div>
 
           <div className={Style.exchanges}>
             {exchanges.map(({ Icon, path, soon }, index) => (
-              <Link
-                href={path}
-                key={index}
-                className='exchange'
-                target='_blank'
-              >
-                <Icon />
-
-                {soon && <span className='soon'>Soon</span>}
-              </Link>
+              <Exchange key={index} Icon={Icon} path={path} soon={soon} />
             ))}
           </div>
         </footer>

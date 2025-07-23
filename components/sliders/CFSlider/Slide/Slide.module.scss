@@ -14,14 +14,14 @@
 
   @media screen and (max-width: 850px) {
     width: fit-content;
-    padding: 2.9375rem 75px 37px 40px;
+    padding: 2.9375rem 40px 37px 40px;
     border-radius: 2.375rem;
   }
 
   @media screen and (max-width: vars.$tabletWidth) {
     height: 26.875rem;
     width: auto;
-    padding: 2.9375rem 75px 37px 40px;
+    padding: 2.9375rem 40px 37px 40px;
     border-radius: 2.375rem;
   }
 
@@ -37,6 +37,14 @@
     flex-direction: column;
     gap: 2.5rem;
 
+    @media screen and (max-width: vars.$tabletWidth) {
+      gap: 2.1875rem;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      gap: 0.9375rem;
+    }
+
     .title {
       font-weight: 500;
       font-size: 2.125rem;
@@ -44,11 +52,33 @@
       letter-spacing: -0.04em;
 
       @media screen and (max-width: vars.$tabletWidth) {
-        font-size: 2rem;
+        font-size: 28px;
       }
 
       @media screen and (max-width: vars.$mobileWidth) {
         font-size: 1rem;
+      }
+    }
+
+    .title[lang='ru'] {
+      font-size: 31px;
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        font-size: 13px;
+      }
+    }
+
+    .title[lang='uk'] {
+      @media screen and (max-width: vars.$tabletWidth) {
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        font-size: 15px;
       }
     }
   }
@@ -69,6 +99,13 @@
 
     @media screen and (max-width: vars.$mobileWidth) {
       font-size: 0.75rem;
+    }
+  }
+
+  .desc[lang='ru'],
+  .desc[lang='uk'] {
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 0.625rem;
     }
   }
 }

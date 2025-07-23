@@ -83,11 +83,50 @@
           }
         }
 
+        .title[lang='ru'],
+        .title[lang='uk'] {
+          font-size: 12.5rem;
+          height: 232.5px;
+
+          @media screen and (max-width: vars.$bigLaptopWidth) {
+            font-size: 180px;
+            height: auto;
+          }
+
+          @media screen and (max-width: vars.$laptopWidth) {
+            font-size: 140px;
+          }
+
+          @media screen and (max-width: vars.$tabletWidth) {
+            font-size: 100px;
+          }
+
+          @media screen and (max-width: vars.$mobileWidth) {
+            font-size: 60px;
+          }
+
+          @media screen and (max-width: vars.$smallMobileWidth) {
+            font-size: 50px;
+          }
+
+          @media screen and (max-width: vars.$miniMobileWidth) {
+            font-size: 45px;
+          }
+        }
+
+        .subtitle[lang='ru'] {
+          max-width: 16.875rem;
+
+          @media screen and (max-width: vars.$mobileWidth) {
+            max-width: 7.5rem;
+          }
+        }
+
         .subtitle {
           font-size: 2.5rem;
           line-height: 103%;
           letter-spacing: -0.04em;
-          max-width: 16.25rem;
+          max-width: 260px;
           margin-left: 1.6875rem;
 
           @media screen and (max-width: vars.$laptopWidth) {
@@ -127,6 +166,11 @@
             width: 0;
             height: 0;
           }
+        }
+
+        .statsTitle[lang='ru'],
+        .statsTitle[lang='uk'] {
+          max-width: 170px;
         }
 
         .statsCards {

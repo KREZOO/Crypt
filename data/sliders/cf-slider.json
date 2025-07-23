@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "title": "cf-slider.s1_title",
-    "desc": "cf-slider.s1_desc",
+    "title": "sliders.cfSlider.slide1.title",
+    "desc": "sliders.cfSlider.slide1.desc",
     "image": "/icons/sliders/CFSlider/speed.svg"
   },
   {
     "id": 2,
-    "title": "cf-slider.s2_title",
-    "desc": "cf-slider.s2_desc",
+    "title": "sliders.cfSlider.slide2.title",
+    "desc": "sliders.cfSlider.slide2.desc",
     "image": "/icons/sliders/CFSlider/hotkeys.svg"
   },
   {
     "id": 3,
-    "title": "cf-slider.s3_title",
-    "desc": "cf-slider.s3_desc",
+    "title": "sliders.cfSlider.slide3.title",
+    "desc": "sliders.cfSlider.slide3.desc",
     "image": "/icons/sliders/CFSlider/notifications.svg"
   },
   {
     "id": 4,
-    "title": "cf-slider.s4_title",
-    "desc": "cf-slider.s4_desc",
+    "title": "sliders.cfSlider.slide4.title",
+    "desc": "sliders.cfSlider.slide4.desc",
     "image": "/icons/sliders/CFSlider/demo-account.svg"
   },
   {
     "id": 5,
-    "title": "cf-slider.s5_title",
-    "desc": "cf-slider.s5_desc",
+    "title": "sliders.cfSlider.slide5.title",
+    "desc": "sliders.cfSlider.slide5.desc",
     "image": "/icons/sliders/CFSlider/cloud-service.svg"
   },
   {
     "id": 6,
-    "title": "cf-slider.s6_title",
-    "desc": "cf-slider.s6_desc",
+    "title": "sliders.cfSlider.slide6.title",
+    "desc": "sliders.cfSlider.slide6.desc",
     "image": "/icons/sliders/CFSlider/dark-theme.svg"
   }
 ]
