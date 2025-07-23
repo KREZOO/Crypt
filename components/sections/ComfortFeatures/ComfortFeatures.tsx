@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
-import { useIsMobile } from '@/hooks/breakpoints/useIsMobile';
+import { useIsMobile } from '@/hooks/breakpoints';
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
-import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 
 import Style from './ComfortFeatures.module.scss';
 import { CFSlider } from '@/components/sliders/CFSlider/CFSlider';
@@ -11,6 +11,7 @@ import { CFSlider } from '@/components/sliders/CFSlider/CFSlider';
 interface Props {}
 
 export function ComfortFeatures({}: Props) {
+  const { t } = useTranslation();
   const isMobile = useIsMobile();
 
   return (
@@ -26,7 +27,7 @@ export function ComfortFeatures({}: Props) {
       <div className='container'>
         <div className={Style.wrapper}>
           <SectionHeader
-            title='Everything for your comfortable work'
+            title={t('comfortFeatures.title')}
             titleGradient
             titleSize='md'
           />

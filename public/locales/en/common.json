@@ -1,45 +1,90 @@
 {
+  "soon": "soon",
+  "signIn": "sign in",
+  "signUp": "Sign up now",
   "prices": "prices",
   "partners": "partners",
-  "signIn": "sign in",
-  "heroTitle": "Crypto trading",
-  "heroSubTitle": "with bots and smart seals",
-  "signUp": "Sign up now",
-  "exchangesTitle": "Trade for free on your favorite exchanges",
-  "numbers": "numbers",
-  "managePos": "Manage positions on",
-  "tradingVolume": "$18.5 B+",
-  "tradingVolumeDesc": "Total trading volume",
-  "actualStatistic": "Actual statistic on 19.07.2022",
-  "staticCard1Number": "36М+",
-  "staticCard2Number": "21.5 K+",
-  "staticCard3Number": "325 M+",
-  "staticCard1Desc": "We are online",
-  "staticCard2Desc": "Traiders in platform",
-  "staticCard3Desc": "Total deals in platform",
-  "benefits": "benefits",
-  "featureBlock1Title": "Interface Builder",
-  "featureBlock1Subtitle": "Customize your look",
-  "featureBlock1Desc": "Remove the excess, add what you need. Trade at your convenience.",
-  "featureBlock2Title": "MultiChart",
-  "featureBlock2SubtitlePt1": "Add any trading pairs",
-  "featureBlock2SubtitlePt2": "from different exchanges and analyzecryptocurrency assets on one screen",
-  "featureBlock3Title": "Portfolio & Statistics",
-  "featureBlock3Subtitle": "Your assets on all connected exchanges are collected in one place",
-  "featureBlock3DescPt1": "Visual statistics of trade.",
-  "featureBlock3DescPt2": "Uploading reports.",
-  "cf-slider": {
-    "s1_title": "Speed",
-    "s1_desc": "Your assets on all connected exchanges are collected in one place",
-    "s2_title": "Hotkeys",
-    "s2_desc": "Use hot keys to work faster",
-    "s3_title": "Notifications",
-    "s3_desc": "Get all the importantemail messages and Telegram",
-    "s4_title": "Demo Account",
-    "s4_desc": "Train. Learn. Test any features. Free and without risks",
-    "s5_title": "Cloud Service",
-    "s5_desc": "Updates are usually invisible. No break from trade.",
-    "s6_title": "Dark theme",
-    "s6_desc": "Trade anytime. Even at night."
+
+  "hero": {
+    "title": "Crypto trading",
+    "subtitle": "with bots and smart seals",
+    "exchangesTitle": "Trade for free on your favorite exchanges"
+  },
+
+  "numbers": {
+    "header": { "title": "numbers", "desc": "Manage positions on" },
+    "title": "$18.5 B+",
+    "subtitle": "Total trading volume",
+    "statsTitle": "Actual statistic on 19.07.2022",
+    "statsCards": {
+      "card1": {
+        "data": "36 M+",
+        "title": "We are online"
+      },
+      "card2": {
+        "data": "21.5 K+",
+        "title": "Traiders in platform"
+      },
+      "card3": {
+        "data": "325 M+",
+        "title": "Total deals in platform"
+      }
+    }
+  },
+
+  "benefits": {
+    "title": "benefits",
+    "desc": "Manage positions on",
+    "features": {
+      "block1": {
+        "title": "Interface Builder",
+        "subtitle": "Customize your look",
+        "desc": "Remove the excess, add what you need. Trade at your convenience."
+      },
+      "block2": {
+        "title": "MultiChart",
+        "subtitlePt1": "Add any trading pairs",
+        "subtitlePt2": "from different exchanges and analyzecryptocurrency assets on one screen"
+      },
+      "block3": {
+        "title": "Portfolio & Statistics",
+        "subtitle": "Your assets on all connected exchanges are collected in one place",
+        "descPt1": "Visual statistics of trade.",
+        "descPt2": "Uploading reports."
+      }
+    }
+  },
+
+  "comfortFeatures": {
+    "title": "Everything for your comfortable work"
+  },
+
+  "sliders": {
+    "cfSlider": {
+      "slide1": {
+        "title": "Speed",
+        "desc": "Your assets on all connected exchanges are collected in one place"
+      },
+      "slide2": {
+        "title": "Hotkeys",
+        "desc": "Use hot keys to work faster"
+      },
+      "slide3": {
+        "title": "Notifications",
+        "desc": "Get all the important email messages and Telegram"
+      },
+      "slide4": {
+        "title": "Demo Account",
+        "desc": "Train. Learn. Test any features. Free and without risks"
+      },
+      "slide5": {
+        "title": "Cloud Service",
+        "desc": "Updates are usually invisible. No break from trade."
+      },
+      "slide6": {
+        "title": "Dark theme",
+        "desc": "Trade anytime. Even at night."
+      }
+    }
   }
 }

@@ -35,6 +35,7 @@
     flex-direction: column;
     gap: 4.0625rem;
     height: fit-content;
+    padding: 0 1.25rem;
 
     @media (max-width: vars.$tabletWidth) {
       gap: 2.5rem;
@@ -42,16 +43,36 @@
 
     @media (max-width: vars.$mobileWidth) {
       gap: 1.5625rem;
+      padding: 0;
     }
 
     .borderTop {
       padding: 0;
     }
 
+    .title[lang='ru'],
+    .title[lang='uk'] {
+      font-size: 110px;
+
+      @media (max-width: vars.$bigLaptopWidth) {
+        font-size: 100px;
+      }
+
+      @media (max-width: vars.$laptopWidth) {
+        font-size: 66px;
+      }
+
+      @media (max-width: vars.$tabletWidth) {
+        font-size: 50px;
+      }
+
+      @media (max-width: vars.$mobileWidth) {
+        font-size: 40px;
+      }
+    }
+
     .title {
       margin-top: 0.625rem;
-      padding-left: 1.5625rem;
-      padding-right: 50px;
 
       font-size: 8.125rem;
       font-weight: 300;
@@ -61,6 +82,8 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      hyphens: auto;
+      padding-bottom: 0.6875rem;
 
       @media (max-width: 1300px) {
         font-size: 5rem;
@@ -68,44 +91,27 @@
 
       @media (max-width: vars.$laptopWidth) {
         font-size: 4.375rem;
-        padding-right: 1.875rem;
+        padding-bottom: 0.4375rem;
       }
 
       @media (max-width: vars.$tabletWidth) {
         font-size: 3.125rem;
-        padding-right: 1.25rem;
-        padding-left: 0.9375rem;
       }
 
       @media (max-width: vars.$mobileWidth) {
         margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
         font-size: 3.4375rem;
       }
     }
 
     .descWrapper {
       display: flex;
-      padding-left: 2.1875rem;
-      padding-right: 3.125rem;
       justify-content: space-between;
       column-gap: 0.625rem;
-
-      @media (max-width: vars.$laptopWidth) {
-        padding-right: 1.875rem;
-      }
-
-      @media (max-width: vars.$tabletWidth) {
-        padding-right: 1.25rem;
-        padding-left: 1.25rem;
-      }
 
       @media (max-width: vars.$mobileWidth) {
         justify-content: flex-start;
         column-gap: 2.5rem;
-        padding-left: 0.3125rem;
-        padding-right: 0;
       }
 
       @media screen and (max-width: vars.$miniMobileWidth) {
@@ -113,10 +119,11 @@
       }
 
       .subtitle {
-        max-width: 25.9375rem;
+        max-width: 415px;
         font-size: 2.5rem;
         line-height: 93%;
         letter-spacing: -0.04em;
+        hyphens: auto;
 
         @media (max-width: vars.$laptopWidth) {
           max-width: 250px;

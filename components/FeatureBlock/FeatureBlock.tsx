@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Style from './FeatureBlock.module.scss';
 import cn from 'classnames';
@@ -21,6 +22,9 @@ export function FeatureBlock({
   imageSrc,
   reverse = false,
 }: Props) {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+
   const isMobile = useIsMobile();
 
   const titleRef = useRef<HTMLDivElement>(null);
@@ -59,11 +63,19 @@ export function FeatureBlock({
           />
         )}
 
-        <h4 className={Style.title}>{title}</h4>
+        <h4 className={Style.title} lang={lang}>
+          {title}
+        </h4>
 
         <div className={cn(Style.descWrapper, { [Style.onlySubtitle]: !desc })}>
-          <div className={Style.subtitle}>{subtitle}</div>
-          {desc && <div className={Style.desc}>{desc}</div>}
+          <div className={Style.subtitle} lang={lang}>
+            {subtitle}
+          </div>
+          {desc && (
+            <div className={Style.desc} lang={lang}>
+              {desc}
+            </div>
+          )}
         </div>
       </div>
     </div>

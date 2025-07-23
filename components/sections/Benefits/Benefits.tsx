@@ -10,7 +10,7 @@ import Style from './Benefits.module.scss';
 interface Props {}
 
 export function Benefits({}: Props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isMobile = useIsMobile();
 
   return (
@@ -24,23 +24,25 @@ export function Benefits({}: Props) {
       />
 
       <div className={Style.content + ' container'}>
-        <SectionHeader title={t('benefits')} desc={t('managePos')} />
+        <SectionHeader title={t('benefits.title')} desc={t('benefits.desc')} />
 
         <main className={Style.main}>
           <FeatureBlock
             imageSrc='/images/benefits/ib.png'
-            title={t('featureBlock1Title')}
-            subtitle={t('featureBlock1Subtitle')}
-            desc={t('featureBlock1Desc')}
+            title={t('benefits.features.block1.title')}
+            subtitle={t('benefits.features.block1.subtitle')}
+            desc={t('benefits.features.block1.desc')}
           />
 
           <FeatureBlock
             imageSrc='/images/benefits/multi-chart.png'
-            title={t('featureBlock2Title')}
+            title={t('benefits.features.block2.title')}
             subtitle={
               <>
-                {t('featureBlock2SubtitlePt1')}{' '}
-                <span className='subtext'>{t('featureBlock2SubtitlePt2')}</span>
+                {t('benefits.features.block2.subtitlePt1')}{' '}
+                <span className='subtext'>
+                  {t('benefits.features.block2.subtitlePt2')}
+                </span>
               </>
             }
             reverse
@@ -48,11 +50,12 @@ export function Benefits({}: Props) {
 
           <FeatureBlock
             imageSrc='/images/benefits/portfolio.png'
-            title={t('featureBlock3Title')}
-            subtitle={t('featureBlock3Subtitle')}
+            title={t('benefits.features.block3.title')}
+            subtitle={t('benefits.features.block3.subtitle')}
             desc={
               <>
-                {t('featureBlock3DescPt1')} <br /> {t('featureBlock3DescPt2')}
+                {t('benefits.features.block3.descPt1')} <br />{' '}
+                {t('benefits.features.block3.descPt2')}
               </>
             }
           />
