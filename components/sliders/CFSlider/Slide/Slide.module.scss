@@ -55,7 +55,7 @@
         font-size: 28px;
       }
 
-      @media screen and (max-width: vars.$mobileWidth) {
+      @media screen and (max-width: vars.$miniTabletWidth) {
         font-size: 1rem;
       }
     }
@@ -67,7 +67,7 @@
         font-size: 22px;
       }
 
-      @media screen and (max-width: vars.$mobileWidth) {
+      @media screen and (max-width: vars.$miniTabletWidth) {
         font-size: 13px;
       }
     }
@@ -77,7 +77,7 @@
         font-size: 25px;
       }
 
-      @media screen and (max-width: vars.$mobileWidth) {
+      @media screen and (max-width: vars.$miniTabletWidth) {
         font-size: 15px;
       }
     }
@@ -97,14 +97,14 @@
       font-size: 1.0625rem;
     }
 
-    @media screen and (max-width: vars.$mobileWidth) {
+    @media screen and (max-width: vars.$miniTabletWidth) {
       font-size: 0.75rem;
     }
   }
 
   .desc[lang='ru'],
   .desc[lang='uk'] {
-    @media screen and (max-width: vars.$mobileWidth) {
+    @media screen and (max-width: vars.$miniTabletWidth) {
       font-size: 0.625rem;
     }
   }

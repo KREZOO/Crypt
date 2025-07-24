@@ -29,7 +29,7 @@ export function Hero({}: Props) {
   ];
 
   return (
-    <section className={Style.hero}>
+    <section className={Style.hero} lang={i18n.language}>
       <div className={Style.content + ' container'}>
         <header className={Style.header}>
           <h1 className='h1' lang={i18n.language}>

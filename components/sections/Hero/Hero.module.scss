@@ -1,5 +1,16 @@
 @use 'styles/vars';
 
+.hero[lang='ru'],
+.hero[lang='uk'] {
+  @media screen and (max-width: vars.$miniTabletWidth) {
+    padding-top: 420px;
+  }
+
+  @media screen and (max-width: vars.$mobileWidth) {
+    padding-top: 350px;
+  }
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -7,6 +18,10 @@
 
   @media (max-width: vars.$miniTabletWidth) {
     margin-top: 90px;
+    padding-top: 390px;
+  }
+
+  @media (max-width: vars.$mobileWidth) {
     padding-top: 21.25rem;
   }
 
@@ -170,7 +185,7 @@
     @media (max-width: vars.$miniTabletWidth) {
       background: url('/images/hero/hero-bg-mb.png') no-repeat;
       background-size: 100% auto;
-      background-position: center -4.375rem;
+      background-position: center -80px;
     }
 
     @media (max-width: vars.$miniMobileWidth) {
