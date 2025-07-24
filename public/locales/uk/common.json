@@ -2,6 +2,8 @@
   "prices": "ціни",
   "partners": "партнери",
   "signIn": "увійти",
+  "createAccount": "Створити аккаунт",
+
   "heroTitle": "Крипто торгівля",
   "heroSubTitle": "з ботами та розумними системами захисту",
   "signUp": "Реєстрація",
@@ -27,5 +29,22 @@
   "featureBlock3Title": "Портфоліо та статистика",
   "featureBlock3Subtitle": "Ваші активи на всіх подключенних біржах зібрані в одному місці",
   "featureBlock3DescPt1": "Візуальна статистика торгівлі.",
-  "featureBlock3DescPt2": "Завантаження звітів."
+  "featureBlock3DescPt2": "Завантаження звітів.",
+
+  "socialsTitle": "Ми у соц.",
+  "networks": "мережах",
+  "documents": "Документи",
+  "tgDesc1": "Чат",
+  "tgDesc2": "Канал",
+  "documentsLink1": "Умови використання",
+  "documentsLink2": "Політика приватності",
+  "documentsLink3": "Реферальна згода",
+  "platform": "Платформа",
+  "platformLink1": "Функції",
+  "platformLink2": "Тарифи",
+  "platformLink3": "Партнери",
+  "platformLink4": "Академія",
+  "platformLink5": "База знань",
+  "platformLink6": "Часті запитання",
+  "platformLink7": "Вакансії"
 }

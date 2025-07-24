@@ -2,6 +2,8 @@
   "prices": "цены",
   "partners": "партнёры",
   "signIn": "войти",
+  "createAccount": "Создать аккаунт",
+
   "heroTitle": "Крипто торговля",
   "heroSubTitle": "с ботами и умными системами защиты",
   "signUp": "Регестрация",
@@ -27,5 +29,22 @@
   "featureBlock3Title": "Портфолио и статистика",
   "featureBlock3Subtitle": "Ваши активы на всех подключенных биржах собраны в одном месте",
   "featureBlock3DescPt1": "Визуальная статистика торговли.",
-  "featureBlock3DescPt2": "Заргузка отчетов."
+  "featureBlock3DescPt2": "Заргузка отчетов.",
+
+  "socialsTitle": "Мы в соц.",
+  "networks": "сетях",
+  "documents": "Документы",
+  "tgDesc1": "Чат",
+  "tgDesc2": "Канал",
+  "documentsLink1": "Условия использования",
+  "documentsLink2": "Политика приватности",
+  "documentsLink3": "Реферальное соглашение",
+  "platform": "Платформа",
+  "platformLink1": "Функции",
+  "platformLink2": "Тарифы",
+  "platformLink3": "Партнёры",
+  "platformLink4": "Академия",
+  "platformLink5": "База знаний",
+  "platformLink6": "Частые вопросы",
+  "platformLink7": "Вакансии"
 }

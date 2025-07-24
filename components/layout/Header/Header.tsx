@@ -55,7 +55,7 @@ export function Header({}: Props) {
 
   return (
     <div className={Style.header}>
-      <Link href="#" className={Style.logo}>
+      <Link href="/" className={Style.logo}>
         <LogoIcon />
       </Link>
       {/* Если не телефон — оставляем SwitchLanguage на месте */}

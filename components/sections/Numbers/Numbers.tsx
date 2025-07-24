@@ -26,7 +26,7 @@ export function Numbers({}: Props) {
       <div className={Style.bg} />
 
       <div className={Style.content + " container"}>
-        <SectionHeader title={t("nubers")} desc={t("managePos")} />
+        <SectionHeader title={t("numbers")} desc={t("managePos")} />
 
         <main className={Style.main}>
           <div className={Style.titleWrapper}>

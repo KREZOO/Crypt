@@ -1,10 +1,13 @@
 {
+  "soon": "soon",
   "prices": "prices",
   "partners": "partners",
   "signIn": "sign in",
+  "signUp": "Sign up now",
+  "createAccount": "Create an account",
+
   "heroTitle": "Crypto trading",
   "heroSubTitle": "with bots and smart seals",
-  "signUp": "Sign up now",
   "exchangesTitle": "Trade for free on your favorite exchanges",
   "numbers": "numbers",
   "managePos": "Manage positions on",
@@ -27,5 +30,22 @@
   "featureBlock3Title": "Portfolio & Statistics",
   "featureBlock3Subtitle": "Your assets on all connected exchanges are collected in one place",
   "featureBlock3DescPt1": "Visual statistics of trade.",
-  "featureBlock3DescPt2": "Uploading reports."
+  "featureBlock3DescPt2": "Uploading reports.",
+
+  "socialsTitle": "We are in social",
+  "networks": "networks",
+  "tgDesc1": "Chat",
+  "tgDesc2": "Channel",
+  "documents": "Documents",
+  "documentsLink1": "Terms of use",
+  "documentsLink2": "Privacy Policy",
+  "documentsLink3": "Referral Agreement",
+  "platform": "Platform",
+  "platformLink1": "Functions",
+  "platformLink2": "Tariffs",
+  "platformLink3": "Partners",
+  "platformLink4": "Academy",
+  "platformLink5": "Knowledge base",
+  "platformLink6": "Popular questions",
+  "platformLink7": "Jobs"
 }
