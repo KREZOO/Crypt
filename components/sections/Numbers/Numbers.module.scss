@@ -7,7 +7,7 @@
   padding-bottom: 8.125rem;
   overflow: hidden;
 
-  @media screen and (max-width: vars.$mobileWidth) {
+  @media screen and (max-width: vars.$miniTabletWidth) {
     padding-bottom: 4.375rem;
   }
 
@@ -20,7 +20,7 @@
     z-index: 0;
     rotate: 5deg;
 
-    @media screen and (max-width: vars.$mobileWidth) {
+    @media screen and (max-width: vars.$miniTabletWidth) {
       background: url('/images/numbers/numbers-bg-mb.png') no-repeat center /
         cover;
       rotate: 0deg;
@@ -35,7 +35,7 @@
     flex-direction: column;
     gap: 4.375rem;
 
-    @media screen and (max-width: vars.$mobileWidth) {
+    @media screen and (max-width: vars.$miniTabletWidth) {
       gap: 1.875rem;
     }
 
@@ -47,7 +47,7 @@
         gap: 9.375rem;
       }
 
-      @media screen and (max-width: vars.$mobileWidth) {
+      @media screen and (max-width: vars.$miniTabletWidth) {
         gap: 5.625rem;
       }
 
@@ -60,7 +60,7 @@
           gap: 1.25rem;
         }
 
-        @media screen and (max-width: vars.$mobileWidth) {
+        @media screen and (max-width: vars.$miniTabletWidth) {
           gap: 0.625rem;
         }
 
@@ -78,7 +78,7 @@
             font-size: 7.8125rem;
           }
 
-          @media screen and (max-width: vars.$mobileWidth) {
+          @media screen and (max-width: vars.$miniTabletWidth) {
             font-size: 4.375rem;
           }
         }
@@ -101,7 +101,7 @@
             font-size: 100px;
           }
 
-          @media screen and (max-width: vars.$mobileWidth) {
+          @media screen and (max-width: vars.$miniTabletWidth) {
             font-size: 60px;
           }
 
@@ -117,7 +117,7 @@
         .subtitle[lang='ru'] {
           max-width: 16.875rem;
 
-          @media screen and (max-width: vars.$mobileWidth) {
+          @media screen and (max-width: vars.$miniTabletWidth) {
             max-width: 7.5rem;
           }
         }
@@ -138,7 +138,7 @@
             margin-left: 0.3125rem;
           }
 
-          @media screen and (max-width: vars.$mobileWidth) {
+          @media screen and (max-width: vars.$miniTabletWidth) {
             font-size: 1rem;
             max-width: 8.125rem;
           }
@@ -160,7 +160,7 @@
             margin-left: 0.3125rem;
           }
 
-          @media screen and (max-width: vars.$mobileWidth) {
+          @media screen and (max-width: vars.$miniTabletWidth) {
             display: none;
             visibility: hidden;
             width: 0;
@@ -186,7 +186,7 @@
             column-gap: 0.8125rem;
           }
 
-          @media screen and (max-width: vars.$mobileWidth) {
+          @media screen and (max-width: vars.$miniTabletWidth) {
             row-gap: 0.9375rem;
             column-gap: 0.625rem;
           }

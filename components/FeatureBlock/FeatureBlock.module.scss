@@ -66,8 +66,8 @@
         font-size: 50px;
       }
 
-      @media (max-width: vars.$mobileWidth) {
-        font-size: 40px;
+      @media (max-width: vars.$miniTabletWidth) {
+        font-size: 28px;
       }
     }
 
@@ -98,9 +98,9 @@
         font-size: 3.125rem;
       }
 
-      @media (max-width: vars.$mobileWidth) {
+      @media (max-width: vars.$miniTabletWidth) {
         margin-top: 0;
-        font-size: 3.4375rem;
+        font-size: 35px;
       }
     }
 
@@ -135,8 +135,15 @@
           font-size: 1.25rem;
         }
 
-        @media (max-width: vars.$mobileWidth) {
-          font-size: 1.125rem;
+        @media (max-width: vars.$miniTabletWidth) {
+          font-size: 18px;
+        }
+      }
+
+      .subtitle[lang='ru'],
+      .subtitle[lang='uk'] {
+        @media screen and (max-width: vars.$miniTabletWidth) {
+          font-size: 14px;
         }
       }
 
@@ -154,7 +161,7 @@
           font-size: 0.875rem;
         }
 
-        @media (max-width: vars.$tabletWidth) {
+        @media (max-width: vars.$miniTabletWidth) {
           max-width: 120px;
           font-size: 0.75rem;
         }
@@ -165,7 +172,7 @@
       .subtitle {
         max-width: 35.625rem;
 
-        @media (max-width: vars.$mobileWidth) {
+        @media (max-width: vars.$miniTabletWidth) {
           max-width: 17.1875rem;
         }
       }
