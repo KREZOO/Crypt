@@ -4,6 +4,7 @@
   "signUp": "Регистрация",
   "prices": "цены",
   "partners": "партнёры",
+  "createAccount": "Создать аккаунт",
 
   "hero": {
     "title": "Крипто торговля",
@@ -86,5 +87,22 @@
         "desc": "Торгуйте в любое время. Даже ночью"
       }
     }
-  }
+  },
+
+  "socialsTitle": "Мы в соц.",
+  "networks": "сетях",
+  "documents": "Документы",
+  "tgDesc1": "Чат",
+  "tgDesc2": "Канал",
+  "documentsLink1": "Условия использования",
+  "documentsLink2": "Политика приватности",
+  "documentsLink3": "Реферальное соглашение",
+  "platform": "Платформа",
+  "platformLink1": "Функции",
+  "platformLink2": "Тарифы",
+  "platformLink3": "Партнёры",
+  "platformLink4": "Академия",
+  "platformLink5": "База знаний",
+  "platformLink6": "Частые вопросы",
+  "platformLink7": "Вакансии"
 }

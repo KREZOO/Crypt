@@ -4,6 +4,7 @@
   "signUp": "Sign up now",
   "prices": "prices",
   "partners": "partners",
+  "createAccount": "Create an account",
 
   "hero": {
     "title": "Crypto trading",
@@ -86,5 +87,22 @@
         "desc": "Trade anytime. Even at night."
       }
     }
-  }
+  },
+
+  "socialsTitle": "We are in social",
+  "networks": "networks",
+  "tgDesc1": "Chat",
+  "tgDesc2": "Channel",
+  "documents": "Documents",
+  "documentsLink1": "Terms of use",
+  "documentsLink2": "Privacy Policy",
+  "documentsLink3": "Referral Agreement",
+  "platform": "Platform",
+  "platformLink1": "Functions",
+  "platformLink2": "Tariffs",
+  "platformLink3": "Partners",
+  "platformLink4": "Academy",
+  "platformLink5": "Knowledge base",
+  "platformLink6": "Popular questions",
+  "platformLink7": "Jobs"
 }

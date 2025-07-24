@@ -1,0 +1,259 @@
+@use "styles/_vars";
+
+.footer {
+  align-items: space-between;
+  max-width: 100%;
+  background-color: vars.$bgFooter;
+  padding: 36px 53px 63px;
+  border-radius: 50px 50px 0px 0px;
+  @media (max-width: 1130px) {
+    padding: 25px 35px 35px;
+  }
+  @media (max-width: vars.$laptopWidth) {
+    padding: 20px 15px 25px;
+  }
+  @media (max-width: vars.$tabletWidth) {
+    padding: 36px 37px 56px;
+  }
+  @media (max-width: vars.$miniTabletWidth) {
+    padding: 30px 30px 40px;
+  }
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 250px) 140px 120px 220px;
+    grid-auto-rows: auto;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 1130px) {
+      grid-template-columns: 180px 215px 140px 120px 220px;
+      gap: 10px;
+    }
+    @media (max-width: vars.$laptopWidth) {
+      grid-template-columns: 155px 180px 115px 115px 190px;
+    }
+    @media (max-width: vars.$tabletWidth) {
+      grid-template-columns: 155px 110px 190px;
+      gap: 20px;
+    }
+    @media (max-width: vars.$miniTabletWidth) {
+      grid-template-columns: 100px 100px 160px;
+      gap: 12px;
+    }
+    @media (max-width: vars.$mobileWidth) {
+      grid-template-columns: 160px 100px;
+    }
+
+    .columnLogo {
+      justify-content: space-between;
+      @media (max-width: vars.$tabletWidth) {
+        &::after {
+          content: "";
+          bottom: 0;
+          left: 0;
+          width: 201%;
+          height: 2px;
+          background: #644f86;
+        }
+      }
+    }
+    .columnSocials {
+      justify-content: space-between;
+      @media (max-width: vars.$tabletWidth) {
+        &::after {
+          content: "";
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #644f86;
+        }
+      }
+    }
+    .column {
+      display: flex;
+      gap: 25px;
+      flex-direction: column;
+      .logo {
+        z-index: 7;
+        display: flex;
+        color: vars.$textColor;
+        svg {
+          width: 245px;
+          height: 52.5px;
+          @media (max-width: 1130px) {
+            width: 183px;
+            height: 39px;
+          }
+          @media (max-width: vars.$laptopWidth) {
+            width: 150px;
+            height: 30px;
+          }
+        }
+      }
+      .copyright {
+        color: vars.$footerColor;
+        font-size: 17px;
+      }
+      @media (max-width: vars.$miniTabletWidth) {
+        gap: 20px;
+      }
+    }
+    .socialsWrap {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .socialsTitle {
+        color: vars.$footerColor;
+        font-size: 17px;
+        @media (max-width: vars.$laptopWidth) {
+          font-size: 15px;
+        }
+        @media (max-width: vars.$miniTabletWidth) {
+          font-size: 13px;
+        }
+      }
+      .socials {
+        display: flex;
+        column-gap: 9px;
+        .linkLogo {
+          color: vars.$textColor;
+          width: 42px;
+          height: 42px;
+          @media (max-width: 1130px) {
+            width: 35px;
+            height: 35px;
+          }
+          @media (max-width: vars.$laptopWidth) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .tgChat {
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          .tgDesc1 {
+            font-size: 10px;
+            @media (max-width: 1130px) {
+              font-size: 8px;
+            }
+            @media (max-width: vars.$laptopWidth) {
+              margin-top: 6px;
+            }
+          }
+        }
+        .tgChannel {
+          color: #8950e7;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          @media (max-width: 1130px) {
+            margin-top: 1.5px;
+            width: 35px;
+            height: 35px;
+          }
+          @media (max-width: vars.$laptopWidth) {
+            margin-top: 4px;
+            width: 30px;
+            height: 30px;
+          }
+          .tgDesc2 {
+            font-size: 10px;
+            @media (max-width: 1130px) {
+              font-size: 7px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: vars.$tabletWidth) {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 600px) {
+        gap: 15px;
+      }
+      @media (max-width: vars.$mobileWidth) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .info {
+      color: vars.$textColor;
+      font-size: 17px;
+      @media (max-width: vars.$laptopWidth) {
+        font-size: 15px;
+      }
+      @media (max-width: vars.$miniTabletWidth) {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.linkCl {
+  margin-bottom: 10px;
+  font-size: 13px;
+  @media (max-width: vars.$laptopWidth) {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .linkClInner {
+    transition: all 0.3s ease 0s;
+    color: vars.$footerColor;
+  }
+}
+.linkClInner:hover {
+  color: vars.$textColor;
+  text-decoration: underline;
+}
+
+.listsTitle {
+  font-size: 23px;
+  @media (max-width: vars.$laptopWidth) {
+    font-size: 20px;
+  }
+  @media (max-width: vars.$miniTabletWidth) {
+    font-size: 17px;
+  }
+}
+
+.signInFooter {
+  font-size: 23px;
+  transition: all 0.3s ease 0s;
+  color: vars.$textColor;
+  @media (max-width: vars.$laptopWidth) {
+    font-size: 20px;
+  }
+  @media (max-width: vars.$miniTabletWidth) {
+    font-size: 17px;
+  }
+}
+.signInFooter:hover {
+  color: vars.$hoverButton;
+}
+@media (max-width: vars.$tabletWidth) {
+  .footerContainer .column:nth-child(1) {
+    grid-column: span 1;
+  }
+  .footerContainer .column:nth-child(2) {
+    grid-column: span 2;
+  }
+}
+@media (max-width: vars.$miniTabletWidth) {
+  .footerContainer .column:nth-child(1) {
+    display: none;
+  }
+  .footerContainer .column:nth-child(2) {
+    grid-column: span 3;
+  }
+}
+@media (max-width: vars.$mobileWidth) {
+  .footerContainer .column:nth-child(5) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}

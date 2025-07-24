@@ -20,12 +20,12 @@
     width: 100%;
     height: 2px;
     background: vars.$borderSection;
-    z-index: 1;
+    z-index: 8;
   }
 }
 .logo {
   margin-right: 30px;
-  z-index: 2;
+  z-index: 9;
   display: flex;
   color: vars.$textColor;
   svg {
@@ -34,7 +34,7 @@
   }
 }
 .nav {
-  z-index: 7;
+  z-index: 8;
   gap: 38px;
   display: flex;
   align-items: center;
@@ -46,9 +46,13 @@
     opacity: 1;
   }
 }
-
+.lang {
+  z-index: 9;
+}
+.signIn {
+  z-index: 8;
+}
 .menu {
-  z-index: 2;
   gap: 38px;
   display: flex;
   align-items: center;
@@ -113,18 +117,12 @@
 
 @media (max-width: vars.$tabletWidth) {
   .hidden {
+    z-index: 8;
     display: none;
   }
   .header {
-    z-index: 10;
     padding: 25px 20px;
     justify-content: space-between;
-    &::after {
-      z-index: 8;
-    }
-  }
-  .logo {
-    z-index: 8;
   }
   .nav {
     display: flex;
@@ -149,14 +147,8 @@
   .menuLink {
     font-size: 40px;
   }
-  .lang {
-    z-index: 8;
-  }
-  .signIn {
-    z-index: 8;
-  }
   .burger {
-    z-index: 101;
+    z-index: 12;
     display: block;
     position: relative;
     width: 50px;
@@ -196,9 +188,6 @@
 }
 
 @media (max-width: vars.$mobileWidth) {
-  .nav {
-    z-index: 7;
-  }
   .burger {
     width: 30px;
   }
