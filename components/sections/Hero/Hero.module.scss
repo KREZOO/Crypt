@@ -9,6 +9,10 @@
   @media screen and (max-width: vars.$mobileWidth) {
     padding-top: 350px;
   }
+
+  @media screen and (max-width: vars.$miniMobileWidth) {
+    padding-top: 330px;
+  }
 }
 
 .hero {
