@@ -1,0 +1,59 @@
+@use 'styles/vars';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.375rem;
+  width: 100%;
+
+  .buttons {
+    display: flex;
+    gap: 1.25rem;
+    align-self: flex-end;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      display: none;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  .swiperContainer {
+    user-select: none;
+    width: 100%;
+    margin-left: 9.6875rem;
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      margin-left: 5.625rem;
+    }
+
+    @media screen and (max-width: 850px) {
+      margin-left: 2.5rem;
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      margin-left: 0;
+    }
+
+    .swiper {
+      padding-bottom: 3.5625rem;
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        padding-bottom: 2.5rem;
+      }
+
+      :global(.swiper-scrollbar) {
+        height: 0.3125rem !important;
+        border-radius: 1.25rem !important;
+      }
+
+      :global(.swiper-scrollbar-drag) {
+        background: vars.$bgScroll;
+        border-radius: 1.25rem;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}

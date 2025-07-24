@@ -12,11 +12,15 @@
   }
 
   .title {
-    max-width: 62.5rem;
+    max-width: 1000px;
 
     @media screen and (max-width: vars.$mobileWidth) {
       max-width: fit-content;
     }
+  }
+
+  .title[lang='ru'] {
+    max-width: 1060px;
   }
 
   .sm {
@@ -49,7 +53,31 @@
     }
 
     @media screen and (max-width: vars.$mobileWidth) {
-      font-size: 2.25rem;
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: vars.$smallMobileWidth) {
+      font-size: 30px;
+    }
+  }
+
+  .md[lang='ru'] {
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: vars.$smallMobileWidth) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: vars.$miniMobileWidth) {
+      font-size: 22px;
+    }
+  }
+
+  .md[lang='uk'] {
+    @media screen and (max-width: vars.$smallMobileWidth) {
+      font-size: 27px;
     }
   }
 

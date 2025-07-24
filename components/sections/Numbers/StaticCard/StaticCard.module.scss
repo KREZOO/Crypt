@@ -65,6 +65,23 @@
     }
   }
 
+  .data[lang='ru'],
+  .data[lang='uk'] {
+    font-size: 68px;
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      font-size: 38px;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 28px;
+    }
+  }
+
   .title {
     width: 100%;
     font-size: 20px;
@@ -78,6 +95,15 @@
 
     @media screen and (max-width: vars.$mobileWidth) {
       font-size: 0.75rem;
+    }
+  }
+
+  .title[lang='ru'],
+  .title[lang='uk'] {
+    max-width: 220px;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      max-width: 100%;
     }
   }
 }

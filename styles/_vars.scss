@@ -1,13 +1,14 @@
-@use "fonts";
+@use 'fonts';
 // Fonts
-$fontFamily: "Nekst", sans-serif;
-$fontFamilySecond: "SF Pro Display", serif;
+$fontFamily: 'Nekst', sans-serif;
+$fontFamilySecond: 'SF Pro Display', serif;
 
 // Colors
 $textColor: #fff;
 $descColor: #909090;
 $descColorSecond: #6e647d;
 $descColorThird: #b7b1c4;
+$descColorFourth: #e9e3f4;
 $footerColor: #8f889a;
 $titleGradient: linear-gradient(166deg, #fff 0%, #5f29b7 100%);
 
@@ -15,6 +16,7 @@ $bgMain: #000;
 $bgSlider: linear-gradient(152deg, #7061aa 0%, #340e73 100%);
 $bgButton: #5f29b7;
 $bgLogos: #0e0915;
+$bgScroll: #402e5c;
 $bgSubscription: #5b419e;
 $bgSubscriptionYear: linear-gradient(167deg, #2800b0 0%, #8300ea 100%);
 $bgFooter: #171022;
@@ -30,6 +32,7 @@ $hoverSliderBtn: #7952ff;
 $borderLogos: #7b708d;
 $borderSection: linear-gradient(166deg, #fff 0%, #5f29b7 100%);
 $borderFB: #775da8;
+$borderCFSlide: rgba(64, 46, 92, 0.7);
 
 // Form Colors
 $formColor: #8c74b4;
@@ -50,4 +53,5 @@ $laptopWidth: 1024px;
 $tabletWidth: 810px;
 $miniTabletWidth: 570px;
 $mobileWidth: 425px;
+$smallMobileWidth: 375px;
 $miniMobileWidth: 330px;

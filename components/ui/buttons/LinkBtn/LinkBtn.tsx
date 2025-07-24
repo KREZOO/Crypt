@@ -1,7 +1,8 @@
-import Style from "./LinkBtn.module.scss";
+import Style from './LinkBtn.module.scss';
 
-import Link from "next/link";
-import { Arrow02Icon, CircleIcon } from "@/components/ui/icons";
+import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
+import { Arrow02Icon, CircleIcon } from '@/components/ui/icons';
 
 interface Props {
   text: string;
@@ -9,8 +10,11 @@ interface Props {
 }
 
 export function LinkBtn({ text, path }: Props) {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+
   return (
-    <Link href={path} className={Style.btn}>
+    <Link href={path} className={Style.btn} lang={lang}>
       {text}
 
       <div className={Style.iconsWrapper}>

@@ -1,0 +1,111 @@
+@use 'styles/vars';
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 28.4375rem;
+  width: 21.5625rem;
+  padding: 3.125rem 2.5rem 2.1875rem;
+
+  border: 1px solid vars.$borderCFSlide;
+  border-radius: 2.5rem;
+
+  @media screen and (max-width: 850px) {
+    width: fit-content;
+    padding: 2.9375rem 40px 37px 40px;
+    border-radius: 2.375rem;
+  }
+
+  @media screen and (max-width: vars.$tabletWidth) {
+    height: 26.875rem;
+    width: auto;
+    padding: 2.9375rem 40px 37px 40px;
+    border-radius: 2.375rem;
+  }
+
+  @media screen and (max-width: vars.$miniTabletWidth) {
+    height: 14.6875rem;
+    width: 9.375rem;
+    padding: 1rem 1.0625rem 1.125rem;
+    border-radius: 1.125rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      gap: 2.1875rem;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      gap: 0.9375rem;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 2.125rem;
+      line-height: 93%;
+      letter-spacing: -0.04em;
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        font-size: 1rem;
+      }
+    }
+
+    .title[lang='ru'] {
+      font-size: 31px;
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        font-size: 13px;
+      }
+    }
+
+    .title[lang='uk'] {
+      @media screen and (max-width: vars.$tabletWidth) {
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .desc {
+    text-wrap: balance;
+    max-width: 12.5rem;
+    color: vars.$descColorFourth;
+    font-family: vars.$fontFamilySecond;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 125%;
+    letter-spacing: -0.04em;
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      font-size: 1.0625rem;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 0.75rem;
+    }
+  }
+
+  .desc[lang='ru'],
+  .desc[lang='uk'] {
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 0.625rem;
+    }
+  }
+}
