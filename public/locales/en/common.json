@@ -5,6 +5,12 @@
   "prices": "prices",
   "partners": "partners",
   "createAccount": "Create an account",
+  "mainPage": "Main page",
+
+  "notFound": {
+    "title": "Page not found",
+    "desc": "Join to our partners, read author's analytics, explore the world of trading "
+  },
 
   "hero": {
     "title": "Crypto trading",
