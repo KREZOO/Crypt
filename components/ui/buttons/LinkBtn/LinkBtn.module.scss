@@ -57,7 +57,7 @@
   &:hover[lang='uk'] {
     .iconsWrapper {
       .circleWrapper {
-        @media screen and (max-width: vars.$miniMobileWidth) {
+        @media screen and (max-width: vars.$smallMobileWidth) {
           svg {
             transform: scale(0.9);
           }
@@ -110,7 +110,7 @@
 
     .circleWrapper[lang='ru'],
     .circleWrapper[lang='uk'] {
-      @media screen and (max-width: vars.$miniMobileWidth) {
+      @media screen and (max-width: vars.$smallMobileWidth) {
         top: -140%;
 
         svg {
@@ -131,7 +131,7 @@
 .btn[lang='uk'] {
   letter-spacing: normal;
 
-  @media screen and (max-width: vars.$miniMobileWidth) {
+  @media screen and (max-width: vars.$smallMobileWidth) {
     padding: 1.375rem 1.25rem 1.375rem 2.3125rem;
     font-size: 0.9375rem;
   }
