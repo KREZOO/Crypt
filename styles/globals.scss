@@ -21,6 +21,16 @@ body {
   text-wrap: balance;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1;
+  }
+}
+
 .container {
   max-width: vars.$maxWidthContainer;
   margin: 0 auto;

@@ -1,0 +1,218 @@
+@use 'styles/vars';
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .title {
+    font-weight: 500;
+    font-size: 5.125rem;
+    line-height: 95%;
+    letter-spacing: -0.02em;
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      font-size: 4.375rem;
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      margin-top: 10rem;
+      font-size: 3.75rem;
+    }
+
+    @media screen and (max-width: vars.$miniTabletWidth) {
+      font-size: 2.625rem;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      margin-top: calc(5.5625rem + 3.75rem);
+    }
+  }
+
+  .title[lang='ru'],
+  .title[lang='uk'] {
+    @media screen and (max-width: 700px) {
+      font-size: 3.125rem;
+    }
+
+    @media screen and (max-width: vars.$miniTabletWidth) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: vars.$miniMobileWidth) {
+      line-height: 110%;
+    }
+  }
+
+  .content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+    margin-bottom: 7.5rem;
+    margin-top: calc(28.75rem + 7.875rem);
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      margin-top: calc(21.875rem + 7.25rem);
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      gap: 7.5rem;
+      margin-top: 0;
+      margin-bottom: 6.5625rem;
+    }
+
+    @media screen and (max-width: vars.$miniTabletWidth) {
+      gap: 3.75rem;
+      margin-bottom: 5.3125rem;
+    }
+
+    .desc {
+      max-width: 50rem;
+      font-size: 1.875rem;
+      text-align: center;
+      background: vars.$titleGradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media screen and (max-width: vars.$laptopWidth) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: vars.$tabletWidth) {
+        font-size: 1.875rem;
+        margin-top: 22.5rem;
+      }
+
+      @media screen and (max-width: 630px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: vars.$miniTabletWidth) {
+        margin-top: 17.8125rem;
+      }
+
+      @media screen and (max-width: vars.$mobileWidth) {
+        margin-top: 15.625rem;
+      }
+
+      @media screen and (max-width: vars.$smallMobileWidth) {
+        margin-top: 13.75rem;
+      }
+
+      @media screen and (max-width: vars.$miniMobileWidth) {
+        font-size: 20px;
+        margin-top: 11.875rem;
+      }
+    }
+
+    .desc[lang='ru'],
+    .desc[lang='uk'] {
+      font-size: 1.6875rem;
+
+      @media screen and (max-width: 740px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 660px) {
+        font-size: 1.375rem;
+      }
+
+      @media screen and (max-width: vars.$smallMobileWidth) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  .content[lang='ru'],
+  .content[lang='uk'] {
+    gap: 70px;
+
+    @media screen and (max-width: vars.$miniMobileWidth) {
+      gap: 40px;
+    }
+  }
+
+  .hide {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/404-bg.png');
+    background-repeat: no-repeat;
+    background-position: center calc(-3.75rem - 3.125rem);
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1;
+
+    @media screen and (max-width: vars.$bigLaptopWidth) {
+      background-position: center -80px;
+    }
+
+    @media screen and (max-width: vars.$laptopWidth) {
+      background-position: center -110px;
+    }
+
+    @media screen and (max-width: vars.$tabletWidth) {
+      background-image: url('/images/404-bg-tb.png');
+      background-position: center 85px;
+      background-size: auto;
+    }
+
+    @media screen and (max-width: 670px) {
+      background-position: center 55px;
+    }
+
+    @media screen and (max-width: 620px) {
+      background-position: center 85px;
+      background-size: 190%;
+    }
+
+    @media screen and (max-width: vars.$miniTabletWidth) {
+      background-position: center 95px;
+      background-size: 180%;
+    }
+
+    @media screen and (max-width: vars.$mobileWidth) {
+      background-position: center 125px;
+      background-size: 180%;
+    }
+
+    @media screen and (max-width: vars.$smallMobileWidth) {
+      background-image: url('/images/404-bg-mb.png');
+      background-position: center 140px;
+      background-size: 100%;
+    }
+
+    @media screen and (max-width: vars.$miniMobileWidth) {
+      background-position: center 170px;
+    }
+  }
+
+  .bg[lang='ru'],
+  .bg[lang='uk'] {
+    @media screen and (max-width: vars.$smallMobileWidth) {
+      background-position: center 150px;
+    }
+
+    @media screen and (max-width: vars.$miniMobileWidth) {
+      background-position: center 165px;
+    }
+  }
+}

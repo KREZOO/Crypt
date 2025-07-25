@@ -53,6 +53,19 @@
     }
   }
 
+  &:hover[lang='ru'],
+  &:hover[lang='uk'] {
+    .iconsWrapper {
+      .circleWrapper {
+        @media screen and (max-width: vars.$miniMobileWidth) {
+          svg {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+
   .iconsWrapper {
     position: relative;
     width: 4.375rem;
@@ -78,7 +91,7 @@
     .circleWrapper {
       position: absolute;
       right: 0px;
-      top: -45%;
+      top: -40%;
       z-index: 1;
 
       @media screen and (max-width: vars.$mobileWidth) {
@@ -90,6 +103,17 @@
         transform-origin: center;
 
         @media screen and (max-width: vars.$mobileWidth) {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .circleWrapper[lang='ru'],
+    .circleWrapper[lang='uk'] {
+      @media screen and (max-width: vars.$miniMobileWidth) {
+        top: -140%;
+
+        svg {
           transform: scale(0.8);
         }
       }
@@ -106,4 +130,9 @@
 .btn[lang='ru'],
 .btn[lang='uk'] {
   letter-spacing: normal;
+
+  @media screen and (max-width: vars.$miniMobileWidth) {
+    padding: 1.375rem 1.25rem 1.375rem 2.3125rem;
+    font-size: 0.9375rem;
+  }
 }

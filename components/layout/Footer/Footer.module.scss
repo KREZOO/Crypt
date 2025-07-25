@@ -1,4 +1,4 @@
-@use "styles/_vars";
+@use 'styles/_vars';
 
 .footer {
   align-items: space-between;
@@ -48,7 +48,7 @@
       justify-content: space-between;
       @media (max-width: vars.$tabletWidth) {
         &::after {
-          content: "";
+          content: '';
           bottom: 0;
           left: 0;
           width: 201%;
@@ -61,7 +61,7 @@
       justify-content: space-between;
       @media (max-width: vars.$tabletWidth) {
         &::after {
-          content: "";
+          content: '';
           bottom: 0;
           left: 0;
           width: 100%;

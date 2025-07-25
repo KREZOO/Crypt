@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 
-import '@/styles/globals.scss';
+import Header from '@/components/layout/Header/Header';
+import Footer from '@/components/layout/Footer/Footer';
+
 import I18nProviderWrapper from '../providers/I18nProviderWrapper';
+
+import '@/styles/globals.scss';
 
 export const metadata: Metadata = {
   title: 'Capico',
@@ -15,9 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
-        <I18nProviderWrapper>{children}</I18nProviderWrapper>
-      </body>
+      <I18nProviderWrapper>
+        <body className='page'>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </I18nProviderWrapper>
     </html>
   );
 }

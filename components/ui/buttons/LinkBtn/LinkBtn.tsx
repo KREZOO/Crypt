@@ -18,11 +18,11 @@ export function LinkBtn({ text, path }: Props) {
       {text}
 
       <div className={Style.iconsWrapper}>
-        <div className={Style.arrowWrapper}>
+        <div className={Style.arrowWrapper} lang={lang}>
           <Arrow02Icon className={Style.arrow} width={50} height={16} />
         </div>
 
-        <div className={Style.circleWrapper}>
+        <div className={Style.circleWrapper} lang={lang}>
           <CircleIcon className={Style.circle} width={50} height={50} />
         </div>
       </div>
