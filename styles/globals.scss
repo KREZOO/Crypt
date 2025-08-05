@@ -9,15 +9,18 @@
 }
 
 html {
+  width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: vars.$fontFamily;
   font-size: vars.$fontSize;
   color: vars.$textColor;
   background: vars.$bgMain;
-  overflow-x: hidden;
   text-wrap: balance;
 }
 
